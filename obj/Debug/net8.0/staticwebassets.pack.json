@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\functions\\auth\\auth.css",
+      "PackagePath": "staticwebassets\\functions\\auth\\auth.css"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\functions\\auth\\auth.js",
+      "PackagePath": "staticwebassets\\functions\\auth\\auth.js"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\imgs\\noTrespassing.jpg",
+      "PackagePath": "staticwebassets\\imgs\\noTrespassing.jpg"
+    },
+    {
       "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
@@ -243,6 +255,10 @@
     {
       "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\login.html",
+      "PackagePath": "staticwebassets\\login.html"
     },
     {
       "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\web.html",

@@ -1,42 +1,121 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <title>WebSocket Chat</title>
-</head>
-<body>
-    <H1>NOTE</H1>
-    <p>"Your first message will be considered as your username."</p>
-    <p>So, after the first one, continue messaging ...</p>
-    <hr/>
-    <input type="text" id="msg" placeholder="Type a message..." />
+﻿<div id="chat" style="display: none;">
+    <input id="chatMessage" placeholder="Type your message..." />
+    <div id="div_typing"></div>
     <button onclick="sendMessage()">Send</button>
-    <hr/>
-    www.eghbaldar.ir
-    <br/>
-    www.kingeto.ir
-    <pre id="log"></pre>
+</div>
 
-    <script>
-        const socket = new WebSocket((location.protocol === "https:" ? "wss" : "ws") + "://" + location.host + "/ws");
+<div id="log"></div>
 
-    socket.onopen = () => {
-      console.log("Connected to server");
-      log("✅ Connected");
-    };
+<script>
+    let socket;
+    let authenticated = false;
 
-    socket.onmessage = (event) => {
-      log("📨 " + event.data);
-    };
+    window.addEventListener("DOMContentLoaded", () => {
+        connect(); // Automatically try connecting once page loads
+    });
+
+    function connect() {
+        socket = new WebSocket((location.protocol === "https:" ? "wss" : "ws") + "://" + location.host + "/ws");
+
+        socket.onopen = () => {
+            // Nothing to send — we expect the server to authenticate using cookie
+        };
+
+        socket.onmessage = (event) => {
+            const data = event.data;
+
+            // ✅ 1. Authenticated
+            if (data === "Authenticated") {
+                alert("✅ Authentication succeeded!");
+
+                authenticated = true;
+
+                document.getElementById("chat").style.display = "block";
+
+                // Optional if login inputs were removed
+                //const loginInputs = document.querySelectorAll("#username, #password, button");
+                //loginInputs.forEach(el => el && (el.style.display = "none"));
+            }
+
+            // ✅ 2. Typing event (must come before general 'authenticated' check)
+            else if (data.includes("typing")) {
+                try {
+                    const jsonPart = data.split(/:(.+)/)[1].trim();
+                    const typingData = JSON.parse(jsonPart);
+
+                    if (!typingData.status) {
+                        typing("");
+                    } else {
+                        typing("user is typing...");
+                    }
+                } catch (err) {
+                    console.error("Invalid typing format", err);
+                }
+            }
+
+            // ❌ 3. Authentication failure
+            else if (data.includes("Authentication failed") || data.includes("Invalid")) {
+                alert("❌ Authentication failed. Try again.");
+                socket.close();
+            }
+
+            // ✅ 4. Any other messages
+            else if (authenticated) {
+                log(data);
+            }
+        };
+
+        socket.onclose = () => {
+            log("🔌 Disconnected.");
+        };
+
+        socket.onerror = () => {
+            log("⚠️ WebSocket error");
+        };
+    }
 
     function sendMessage() {
-      const msg = document.getElementById("msg").value;
-        socket.send(msg);
-        document.getElementById("msg").value = "";
+        if (!authenticated) {
+            alert("You must be logged in to send messages.");
+            return;
+        }
+
+        const message = document.getElementById("chatMessage").value;
+        if (socket && socket.readyState === WebSocket.OPEN) {
+            socket.send(message); // message is plain text
+            document.getElementById("chatMessage").value = "";
+        }
     }
 
     function log(msg) {
-      document.getElementById("log").textContent += msg + "\n";
+        const div = document.getElementById("log");
+        div.innerHTML += msg + "<br/>";
     }
-    </script>
-</body>
-</html>
+    
+    function typing(msg) {
+        const div = document.getElementById("div_typing");
+        div.innerHTML = msg;
+    }
+
+    //
+
+    let typingTimeout;
+    const TYPING_TIMER_LENGTH = 3000; // 3 seconds no typing = stop
+
+    const chatInput = document.getElementById("chatMessage");
+    chatInput.addEventListener("input", () => {
+        if (!authenticated) return;
+        sendTypingStatus(true);
+        clearTimeout(typingTimeout);
+        typingTimeout = setTimeout(() => {
+            sendTypingStatus(false);
+        }, TYPING_TIMER_LENGTH);
+    });
+
+    function sendTypingStatus(isTyping) {
+        if (socket && socket.readyState === WebSocket.OPEN) {
+            const typingPayload = JSON.stringify({ type: "typing", status: isTyping });
+            socket.send(typingPayload);
+        }
+    }
+</script>

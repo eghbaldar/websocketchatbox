@@ -1,0 +1,7 @@
+D:\_Kingeto\Tutorials\Security\Paid-course\S9 - Socket [Attack 2]\1- What is it\2 Project\websocket\obj\Release\net8.0\PubTmp\Out\websocket.exe
+D:\_Kingeto\Tutorials\Security\Paid-course\S9 - Socket [Attack 2]\1- What is it\2 Project\websocket\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+D:\_Kingeto\Tutorials\Security\Paid-course\S9 - Socket [Attack 2]\1- What is it\2 Project\websocket\obj\Release\net8.0\PubTmp\Out\appsettings.json
+D:\_Kingeto\Tutorials\Security\Paid-course\S9 - Socket [Attack 2]\1- What is it\2 Project\websocket\obj\Release\net8.0\PubTmp\Out\websocket.dll
+D:\_Kingeto\Tutorials\Security\Paid-course\S9 - Socket [Attack 2]\1- What is it\2 Project\websocket\obj\Release\net8.0\PubTmp\Out\websocket.deps.json
+D:\_Kingeto\Tutorials\Security\Paid-course\S9 - Socket [Attack 2]\1- What is it\2 Project\websocket\obj\Release\net8.0\PubTmp\Out\websocket.runtimeconfig.json
+D:\_Kingeto\Tutorials\Security\Paid-course\S9 - Socket [Attack 2]\1- What is it\2 Project\websocket\obj\Release\net8.0\PubTmp\Out\websocket.pdb

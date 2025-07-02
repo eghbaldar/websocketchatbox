@@ -1,17 +1,8 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Benal!";
+    Layout = null;
 }
-
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
 <div class="text-center">
-    <h1 class="display-4">A Simple WebSockety Chatbox!</h1>
-    <h4>NOTE:</h4>
-    <p>WebSockets don’t follow the traditional HTTP request → controller → IActionResult pattern.</p>
-    <p>So, I created a bare-HTML-page to use the webSocket stuff!</p>
-    <p>Link here=> <a href="/web.html">(here)</a></p>
-    <hr/>
-    <h4>Bonus:</h4>
-    <p>✅ You only use IActionResult in MVC or Web API controllers for normal HTTP actions</p>
-    <p>WebSocket is lower-level</p>
-    <p>You could technically use a controller + middleware combo with a service pattern (but you still won't return IActionResult). But this is not common — it's better to use app.Use(...) in the pipeline for WebSockets.</p>
-    <p>Yes, most modern live-chat services like Tawk.to, HubSpot Chat, Intercom, Drift, and others use WebSockets or similar real-time technologies under the hood to enable instant, bidirectional communication between the user’s browser and their servers.</p>
+    <img src="~/imgs/notrespassing.jpg" />
 </div>

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Chat</title>
+</head>
+<body>
+    <H1>NOTE</H1>
+    <p>"Your first message will be considered as your username."</p>
+    <p>So, after the first one, continue messaging ...</p>
+    <hr/>
+    <input type="text" id="msg" placeholder="Type a message..." />
+    <button onclick="sendMessage()">Send</button>
+    <hr/>
+    www.eghbaldar.ir
+    <br/>
+    www.kingeto.ir
+    <pre id="log"></pre>
+
+    <script>
+        const socket = new WebSocket((location.protocol === "https:" ? "wss" : "ws") + "://" + location.host + "/ws");
+
+    socket.onopen = () => {
+      console.log("Connected to server");
+      log("✅ Connected");
+    };
+
+    socket.onmessage = (event) => {
+      log("📨 " + event.data);
+    };
+
+    function sendMessage() {
+      const msg = document.getElementById("msg").value;
+        socket.send(msg);
+        document.getElementById("msg").value = "";
+    }
+
+    function log(msg) {
+      document.getElementById("log").textContent += msg + "\n";
+    }
+    </script>
+</body>
+</html>

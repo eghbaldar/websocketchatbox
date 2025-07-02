@@ -1,11 +1,23 @@
+using Microsoft.EntityFrameworkCore;
 using System.Net.WebSockets;
 using System.Text;
 using websocket;
+using websocket.Context;
+using websocket.Helpers;
+using websocket.Services.Users.Friendship;
+using websocket.Services.Users.UserSessions.PostUserSession;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<IDataBaseContext,DataBaseContext>();
+builder.Services.AddScoped<FriendshipService>();
+builder.Services.AddScoped<PostUserSessionService>();
+
+var ConStr = builder.Configuration.GetConnectionString("LocalServer");
+builder.Services.AddEntityFrameworkSqlServer().AddDbContext<DataBaseContext>(x => x.UseSqlServer(ConStr));
 
 var app = builder.Build();
 
@@ -32,54 +44,5 @@ app.MapControllerRoute(
 app.UseWebSockets();
 
 
-app.Use(async (context, next) =>
-{
-    if (context.Request.Path == "/ws")
-    {
-        if (context.WebSockets.IsWebSocketRequest)
-        {
-            var socket = await context.WebSockets.AcceptWebSocketAsync();
-
-            var buffer = new byte[4096];
-
-            // Receive username as first message
-            var result = await socket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
-            var username = Encoding.UTF8.GetString(buffer, 0, result.Count);
-
-            WebSocketHandler.Clients.Add(new ClientInfo { Socket = socket, Username = username });
-
-            // Message loop
-            while (true)
-            {
-                result = await socket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
-                if (result.MessageType == WebSocketMessageType.Close)
-                {
-                    WebSocketHandler.Clients.RemoveAll(c => c.Socket == socket);
-                    break;
-                }
-
-                var message = Encoding.UTF8.GetString(buffer, 0, result.Count);
-
-                var fullMessage = $"{username}: {message}";
-                var messageBytes = Encoding.UTF8.GetBytes(fullMessage);
-
-                var tasks = WebSocketHandler.Clients
-                    .Where(c => c.Socket.State == WebSocketState.Open)
-                    .Select(c => c.Socket.SendAsync(new ArraySegment<byte>(messageBytes), WebSocketMessageType.Text, true, CancellationToken.None));
-
-                await Task.WhenAll(tasks);
-            }
-        }
-        else
-        {
-            context.Response.StatusCode = 400;
-        }
-    }
-    else
-    {
-        await next();
-    }
-});
-
-
+app.UseMiddleware<Conductor>();
 app.Run();
