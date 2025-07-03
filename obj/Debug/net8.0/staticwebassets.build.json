@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uPSgZUbtopz1vvXWYWrivwXkU8JS+gfuV6DcMXOYNLs=",
+  "Hash": "S9TxbVviosvTc+oYx6ziuUEZnaSOHAZq1KPtvHi0Tsg=",
   "Source": "websocket",
   "BasePath": "_content/websocket",
   "Mode": "Default",
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5ro4yx1y6m",
-      "Integrity": "r5OEKy4HxyS3CExTgLv2FSP5YbOLIpNJN/krX+7qTgQ=",
+      "Fingerprint": "srd2tfc1s4",
+      "Integrity": "yHToNWRxioXcjdJxCuwHR3ClqKIkYwVLvWjxyitK70M=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\web.html"
@@ -6674,51 +6674,6 @@
       ]
     },
     {
-      "Route": "web.5ro4yx1y6m.html",
-      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\web.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3899"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"r5OEKy4HxyS3CExTgLv2FSP5YbOLIpNJN/krX+7qTgQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 02 Jul 2025 22:01:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5ro4yx1y6m"
-        },
-        {
-          "Name": "label",
-          "Value": "web.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-r5OEKy4HxyS3CExTgLv2FSP5YbOLIpNJN/krX+7qTgQ="
-        }
-      ]
-    },
-    {
       "Route": "web.html",
       "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\web.html",
       "Selectors": [],
@@ -6729,7 +6684,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3899"
+          "Value": "7666"
         },
         {
           "Name": "Content-Type",
@@ -6737,11 +6692,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"r5OEKy4HxyS3CExTgLv2FSP5YbOLIpNJN/krX+7qTgQ=\""
+          "Value": "\"yHToNWRxioXcjdJxCuwHR3ClqKIkYwVLvWjxyitK70M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 02 Jul 2025 22:01:39 GMT"
+          "Value": "Thu, 03 Jul 2025 21:12:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6751,7 +6706,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-r5OEKy4HxyS3CExTgLv2FSP5YbOLIpNJN/krX+7qTgQ="
+          "Value": "sha256-yHToNWRxioXcjdJxCuwHR3ClqKIkYwVLvWjxyitK70M="
+        }
+      ]
+    },
+    {
+      "Route": "web.srd2tfc1s4.html",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\web.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7666"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yHToNWRxioXcjdJxCuwHR3ClqKIkYwVLvWjxyitK70M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Jul 2025 21:12:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "srd2tfc1s4"
+        },
+        {
+          "Name": "label",
+          "Value": "web.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yHToNWRxioXcjdJxCuwHR3ClqKIkYwVLvWjxyitK70M="
         }
       ]
     },

@@ -1,8 +1,18 @@
 ﻿<div id="chat" style="display: none;">
-    <input id="chatMessage" placeholder="Type your message..." />
-    <div id="div_typing"></div>
-    <button onclick="sendMessage()">Send</button>
+    <div style="display: flex;">
+        <div id="friendListContainer" style="width: 200px; border-right: 1px solid #ccc;">
+            <!-- Friends will be inserted here -->
+        </div>
+        <!-- 💬 Chat area -->
+        <div style="flex: 1; padding: 10px;">
+            <div id="chatWindow" style="height: 300px; overflow-y: auto; border: 1px solid #aaa; margin-bottom: 10px;"></div>
+            <input id="chatMessage" placeholder="Type your message..." />
+            <div id="div_typing"></div>
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
 </div>
+
 
 <div id="log"></div>
 
@@ -25,16 +35,19 @@
             const data = event.data;
 
             // ✅ 1. Authenticated
-            if (data === "Authenticated") {
+            if (data.startsWith("Authenticated")) {
+
+                const parts = data.split(":");
+                if (parts.length === 2) {
+                    currentUsername = parts[1].trim(); // ✅ Get and Set username
+                }
+
                 alert("✅ Authentication succeeded!");
 
                 authenticated = true;
 
                 document.getElementById("chat").style.display = "block";
-
-                // Optional if login inputs were removed
-                //const loginInputs = document.querySelectorAll("#username, #password, button");
-                //loginInputs.forEach(el => el && (el.style.display = "none"));
+                loadFriends(currentUsername);
             }
 
             // ✅ 2. Typing event (must come before general 'authenticated' check)
@@ -61,7 +74,17 @@
 
             // ✅ 4. Any other messages
             else if (authenticated) {
-                log(data);
+                const parts = data.split(":");
+                const sender = parts[0].trim();
+                const message = parts.slice(1).join(":").trim();
+
+                const target = sender === currentUsername ? selectedFriend : sender;
+
+                addMessageToStore(target, `${sender}: ${message}`);
+
+                if (selectedFriend === target) {
+                    renderChat(target);
+                }
             }
         };
 
@@ -75,26 +98,60 @@
     }
 
     function sendMessage() {
-        if (!authenticated) {
-            alert("You must be logged in to send messages.");
+        if (!authenticated || !selectedFriend) {
+            alert("Select a friend to chat with.");
             return;
         }
 
         const message = document.getElementById("chatMessage").value;
-        if (socket && socket.readyState === WebSocket.OPEN) {
-            socket.send(message); // message is plain text
-            document.getElementById("chatMessage").value = "";
-        }
+        if (!message) return;
+
+        const payload = {
+            type: "chat",
+            to: selectedFriend,
+            message: message
+        };
+
+        socket.send(JSON.stringify(payload));
+
+        addMessageToStore(selectedFriend, `${currentUsername}: ${message}`);
+        renderChat(selectedFriend);
+
+        document.getElementById("chatMessage").value = "";
     }
+
 
     function log(msg) {
         const div = document.getElementById("log");
         div.innerHTML += msg + "<br/>";
     }
-    
+
     function typing(msg) {
         const div = document.getElementById("div_typing");
         div.innerHTML = msg;
+    }
+
+    let selectedFriend = null; // global variable
+    function loadFriends(username) {
+        fetch(`/user/GetFriends?username=${username}`)
+            .then(res => res.json())
+            .then(data => {
+                const container = document.getElementById("friendListContainer");
+                container.innerHTML = "";
+                var friends = data.result;
+                friends.forEach(friend => {
+                    const div = document.createElement("div");
+                    div.textContent = friend.friendName;
+                    div.style.cursor = "pointer";
+                    div.style.padding = "5px";
+                    div.style.borderBottom = "1px solid #ddd";
+                    div.addEventListener("click", () => {
+                        selectedFriend = friend.friendUsername;
+                        renderChat(friend.friendUsername);
+                    });
+                    container.appendChild(div);
+                });
+            });
     }
 
     //
@@ -118,4 +175,26 @@
             socket.send(typingPayload);
         }
     }
+
+    //🧠 3. Manage Chat History per Friend
+    const messageStore = {}; // { friendUsername: [message1, message2, ...] }
+
+    function addMessageToStore(friend, message) {
+        if (!messageStore[friend]) {
+            messageStore[friend] = [];
+        }
+        messageStore[friend].push(message);
+    }
+    function renderChat(friend) {
+        const messages = messageStore[friend] || [];
+        const chatWindow = document.getElementById("chatWindow");
+        chatWindow.innerHTML = "";
+
+        messages.forEach(msg => {
+            const div = document.createElement("div");
+            div.textContent = msg;
+            chatWindow.appendChild(div);
+        });
+    }
+
 </script>

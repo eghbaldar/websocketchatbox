@@ -2,6 +2,7 @@
 using System.Text;
 using System.Text.Json;
 using websocket.Context;
+using websocket.Global;
 using websocket.Services.Users.Authentication;
 using websocket.Services.Users.Friendship;
 
@@ -65,8 +66,10 @@ namespace websocket.Helpers
                         }
 
                         // ✅ Success
-                        await socket.SendAsync(Encoding.UTF8.GetBytes("Authenticated"), WebSocketMessageType.Text, true, CancellationToken.None);
+                        //await socket.SendAsync(Encoding.UTF8.GetBytes("Authenticated"), WebSocketMessageType.Text, true, CancellationToken.None);
+                        await socket.SendAsync(Encoding.UTF8.GetBytes($"Authenticated:{username}"), WebSocketMessageType.Text, true, CancellationToken.None);
 
+                        //GeneralStatics.ThisUsername = username;
                         WebSocketHandler.Clients.Add(new ClientInfo
                         {
                             Socket = socket,
@@ -80,31 +83,84 @@ namespace websocket.Helpers
                             if (result.MessageType == WebSocketMessageType.Close)
                                 break;
 
-                            var msg = Encoding.UTF8.GetString(buffer, 0, result.Count).Trim();
+                            var msgText = Encoding.UTF8.GetString(buffer, 0, result.Count).Trim();
 
-                            // 🛡️ Skip credentials sent again
-                            if (msg.StartsWith("{") && msg.Contains("username") && msg.Contains("password"))
-                                continue;
-
-                            var fullMessage = $"{username}: {msg}";
-                            var messageBytes = Encoding.UTF8.GetBytes(fullMessage);
-
-                            FriendshipService friendshipService = new FriendshipService(_dbContext);
-
-                            var targets = WebSocketHandler.Clients
-                                .Where(c => c.Socket.State == WebSocketState.Open &&
-                                            c.Username != username &&
-                                            friendshipService.AreFriends(username,c.Username))
-                                .ToList();
-
-                            foreach (var target in targets)
+                            if (msgText.StartsWith("{") && msgText.Contains("\"type\""))
                             {
-                                await target.Socket.SendAsync(new ArraySegment<byte>(messageBytes), WebSocketMessageType.Text, true, CancellationToken.None);
+                                using var doc = JsonDocument.Parse(msgText);
+                                var root = doc.RootElement;
+
+                                var type = root.GetProperty("type").GetString();
+
+                                if (type == "typing")
+                                {
+                                    // Broadcast typing to all friends
+                                    var typingPayload = $"{username}: {root}";
+                                    var typingBytes = Encoding.UTF8.GetBytes(typingPayload);
+
+                                    var friendshipService = new FriendshipService(_dbContext);
+
+                                    var targets = WebSocketHandler.Clients
+                                        .Where(c => c.Socket.State == WebSocketState.Open &&
+                                                    c.Username != username &&
+                                                    friendshipService.AreFriends(username, c.Username))
+                                        .ToList();
+
+                                    foreach (var target in targets)
+                                    {
+                                        await target.Socket.SendAsync(new ArraySegment<byte>(typingBytes), WebSocketMessageType.Text, true, CancellationToken.None);
+                                    }
+
+                                    continue;
+                                }
+                                else if (type == "chat")
+                                {
+                                    var recipient = root.GetProperty("to").GetString();
+                                    var message = root.GetProperty("message").GetString();
+
+                                    var fullMessage = $"{username}: {message}";
+                                    var messageBytes = Encoding.UTF8.GetBytes(fullMessage);
+
+                                    var friendshipService = new FriendshipService(_dbContext);
+
+                                    var targetClient = WebSocketHandler.Clients
+                                        .FirstOrDefault(c => c.Username == recipient &&
+                                                             c.Socket.State == WebSocketState.Open &&
+                                                             friendshipService.AreFriends(username, recipient));
+
+                                    if (targetClient != null)
+                                    {
+                                        await targetClient.Socket.SendAsync(new ArraySegment<byte>(messageBytes), WebSocketMessageType.Text, true, CancellationToken.None);
+                                    }
+
+                                    // Echo to sender
+                                    await socket.SendAsync(new ArraySegment<byte>(messageBytes), WebSocketMessageType.Text, true, CancellationToken.None);
+
+                                    continue;
+                                }
                             }
 
-                            // 🔁 Optional echo to self
-                            await socket.SendAsync(new ArraySegment<byte>(messageBytes), WebSocketMessageType.Text, true, CancellationToken.None);
+                            // ✉️ Fallback: normal (non-structured) message broadcast to all friends
+                            var fallbackMessage = $"{username}: {msgText}";
+                            var fallbackBytes = Encoding.UTF8.GetBytes(fallbackMessage);
+
+                            var fallbackFriendshipService = new FriendshipService(_dbContext);
+
+                            var fallbackTargets = WebSocketHandler.Clients
+                                .Where(c => c.Socket.State == WebSocketState.Open &&
+                                            c.Username != username &&
+                                            fallbackFriendshipService.AreFriends(username, c.Username))
+                                .ToList();
+
+                            foreach (var target in fallbackTargets)
+                            {
+                                await target.Socket.SendAsync(new ArraySegment<byte>(fallbackBytes), WebSocketMessageType.Text, true, CancellationToken.None);
+                            }
+
+                            // Optional echo to sender
+                            await socket.SendAsync(new ArraySegment<byte>(fallbackBytes), WebSocketMessageType.Text, true, CancellationToken.None);
                         }
+
                     }
                     catch (Exception ex)
                     {
