@@ -1,4 +1,7 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
+﻿$(function () {
+    if ($('#ms-menu-trigger')[0]) {
+        $('body').on('click', '#ms-menu-trigger', function () {
+            $('.ms-menu').toggleClass('toggled');
+        });
+    }
+});

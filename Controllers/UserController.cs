@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using websocket.Context;
+using websocket.Services.Messages.PostMessage;
 using websocket.Services.Users.Friendship;
 
 namespace websocket.Controllers
@@ -20,6 +21,13 @@ namespace websocket.Controllers
             FriendshipService friendshipService = new FriendshipService(_context);
             var friends = friendshipService.GetFriends(username);
             return Json(friends);
+        }
+        public IActionResult PostMessage(PostMessageServiceDto req)
+        {
+            PostMessageService message = new PostMessageService(_context);
+            if (message.PostMessage(req))
+                return Json(new { IsSuccess = true });
+            else return Json(new { IsSuccess = false });
         }
     }
 }

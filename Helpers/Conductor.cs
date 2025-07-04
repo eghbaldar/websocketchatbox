@@ -26,6 +26,7 @@ namespace websocket.Helpers
                     using var socket = await context.WebSockets.AcceptWebSocketAsync();
                     var buffer = new byte[4096];
                     string? username = null;
+                    string? fullname = null;
 
                     try
                     {
@@ -39,8 +40,9 @@ namespace websocket.Helpers
                                 await SendAndClose(socket, "Authentication failed (invalid cookie)");
                                 return;
                             }
-                            var _username = _dbContext.Users.Where(x => x.Id == user.UserId).First().Username;
-                            username = _username;
+                            var _user = _dbContext.Users.Where(x => x.Id == user.UserId).First();
+                            username = _user.Username;
+                            fullname = _user.Fullname;
                         }
                         else
                         {
@@ -66,8 +68,7 @@ namespace websocket.Helpers
                         }
 
                         // ✅ Success
-                        //await socket.SendAsync(Encoding.UTF8.GetBytes("Authenticated"), WebSocketMessageType.Text, true, CancellationToken.None);
-                        await socket.SendAsync(Encoding.UTF8.GetBytes($"Authenticated:{username}"), WebSocketMessageType.Text, true, CancellationToken.None);
+                        await socket.SendAsync(Encoding.UTF8.GetBytes($"Authenticated:{username}:{fullname}"), WebSocketMessageType.Text, true, CancellationToken.None);
 
                         //GeneralStatics.ThisUsername = username;
                         WebSocketHandler.Clients.Add(new ClientInfo
@@ -198,6 +199,7 @@ namespace websocket.Helpers
     {
         public string username { get; set; }
         public string password { get; set; }
+        //public string fullname { get; set; }
     }
 
     public static class WebSocketHandler

@@ -14,7 +14,6 @@ namespace websocket.Context
         public DbSet<UserSessions> UserSessions { get; set; }
         public DbSet<Friends> Friends { get; set; }
         public DbSet<Messages> Messages { get; set; }
-        public DbSet<Conversations> Conversations { get; set; }
         public DbSet<FriendHidden> FriendHidden { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

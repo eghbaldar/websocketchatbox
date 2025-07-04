@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "S9TxbVviosvTc+oYx6ziuUEZnaSOHAZq1KPtvHi0Tsg=",
+  "Hash": "nwNj0Y7ITBLPYAV/WyiMTk+M7BdewxL1dc6P8KCHJhY=",
   "Source": "websocket",
   "BasePath": "_content/websocket",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c2tiyv64ts",
-      "Integrity": "pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=",
+      "Fingerprint": "jdvt17w2e8",
+      "Integrity": "F+G1hVuLF7kGAqqAGT/jI61v+L3ck+rx3RS8uRlywrE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -178,8 +178,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xtxxf3hu2r",
-      "Integrity": "hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=",
+      "Fingerprint": "t546zh5nh5",
+      "Integrity": "kVGCYuDbwxEkV53xjgUcq6seIKXSCDUPdQU05R0GYEU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -1417,59 +1417,14 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "srd2tfc1s4",
-      "Integrity": "yHToNWRxioXcjdJxCuwHR3ClqKIkYwVLvWjxyitK70M=",
+      "Fingerprint": "cb6og7za62",
+      "Integrity": "+HExpCwXfeFN1/ejIPycCCn+zxQs1Jlrz4C8NsZtNBQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\web.html"
     }
   ],
   "Endpoints": [
-    {
-      "Route": "css/site.c2tiyv64ts.css",
-      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "362"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 21:54:14 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "c2tiyv64ts"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
-        }
-      ]
-    },
     {
       "Route": "css/site.css",
       "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\css\\site.css",
@@ -1481,7 +1436,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "4736"
         },
         {
           "Name": "Content-Type",
@@ -1489,11 +1444,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"F+G1hVuLF7kGAqqAGT/jI61v+L3ck+rx3RS8uRlywrE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 21:54:14 GMT"
+          "Value": "Thu, 03 Jul 2025 21:46:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1503,7 +1458,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-F+G1hVuLF7kGAqqAGT/jI61v+L3ck+rx3RS8uRlywrE="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.jdvt17w2e8.css",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4736"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F+G1hVuLF7kGAqqAGT/jI61v+L3ck+rx3RS8uRlywrE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Jul 2025 21:46:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jdvt17w2e8"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F+G1hVuLF7kGAqqAGT/jI61v+L3ck+rx3RS8uRlywrE="
         }
       ]
     },
@@ -1846,7 +1846,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "198"
         },
         {
           "Name": "Content-Type",
@@ -1854,11 +1854,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "\"kVGCYuDbwxEkV53xjgUcq6seIKXSCDUPdQU05R0GYEU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 21:54:14 GMT"
+          "Value": "Thu, 03 Jul 2025 21:45:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1868,12 +1868,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-kVGCYuDbwxEkV53xjgUcq6seIKXSCDUPdQU05R0GYEU="
         }
       ]
     },
     {
-      "Route": "js/site.xtxxf3hu2r.js",
+      "Route": "js/site.t546zh5nh5.js",
       "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1883,7 +1883,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "198"
         },
         {
           "Name": "Content-Type",
@@ -1891,11 +1891,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "\"kVGCYuDbwxEkV53xjgUcq6seIKXSCDUPdQU05R0GYEU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 21:54:14 GMT"
+          "Value": "Thu, 03 Jul 2025 21:45:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1905,7 +1905,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
+          "Value": "t546zh5nh5"
         },
         {
           "Name": "label",
@@ -1913,7 +1913,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-kVGCYuDbwxEkV53xjgUcq6seIKXSCDUPdQU05R0GYEU="
         }
       ]
     },
@@ -6674,6 +6674,51 @@
       ]
     },
     {
+      "Route": "web.cb6og7za62.html",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\web.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13946"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+HExpCwXfeFN1/ejIPycCCn+zxQs1Jlrz4C8NsZtNBQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Jul 2025 15:27:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cb6og7za62"
+        },
+        {
+          "Name": "label",
+          "Value": "web.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+HExpCwXfeFN1/ejIPycCCn+zxQs1Jlrz4C8NsZtNBQ="
+        }
+      ]
+    },
+    {
       "Route": "web.html",
       "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\web.html",
       "Selectors": [],
@@ -6684,7 +6729,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7666"
+          "Value": "13946"
         },
         {
           "Name": "Content-Type",
@@ -6692,11 +6737,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"yHToNWRxioXcjdJxCuwHR3ClqKIkYwVLvWjxyitK70M=\""
+          "Value": "\"+HExpCwXfeFN1/ejIPycCCn+zxQs1Jlrz4C8NsZtNBQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Jul 2025 21:12:52 GMT"
+          "Value": "Fri, 04 Jul 2025 15:27:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6706,52 +6751,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-yHToNWRxioXcjdJxCuwHR3ClqKIkYwVLvWjxyitK70M="
-        }
-      ]
-    },
-    {
-      "Route": "web.srd2tfc1s4.html",
-      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\web.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7666"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"yHToNWRxioXcjdJxCuwHR3ClqKIkYwVLvWjxyitK70M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 03 Jul 2025 21:12:52 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "srd2tfc1s4"
-        },
-        {
-          "Name": "label",
-          "Value": "web.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-yHToNWRxioXcjdJxCuwHR3ClqKIkYwVLvWjxyitK70M="
+          "Value": "sha256-+HExpCwXfeFN1/ejIPycCCn+zxQs1Jlrz4C8NsZtNBQ="
         }
       ]
     },

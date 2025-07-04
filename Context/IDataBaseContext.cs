@@ -11,7 +11,6 @@ namespace websocket.Context
         DbSet<UserSessions> UserSessions { get; set; }
         DbSet<Friends> Friends { get; set; }
         DbSet<Messages> Messages { get; set; }
-        DbSet<Conversations> Conversations { get; set; }
         DbSet<FriendHidden> FriendHidden { get; set; }
         //SaveChanges
         int SaveChanges(bool acceptAllChangesOnSuccess);

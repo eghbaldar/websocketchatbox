@@ -4,6 +4,7 @@ using System.Text;
 using websocket;
 using websocket.Context;
 using websocket.Helpers;
+using websocket.Services.Messages.PostMessage;
 using websocket.Services.Users.Friendship;
 using websocket.Services.Users.UserSessions.PostUserSession;
 
@@ -15,6 +16,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IDataBaseContext,DataBaseContext>();
 builder.Services.AddScoped<FriendshipService>();
 builder.Services.AddScoped<PostUserSessionService>();
+builder.Services.AddScoped<PostMessageService>();
 
 var ConStr = builder.Configuration.GetConnectionString("LocalServer");
 builder.Services.AddEntityFrameworkSqlServer().AddDbContext<DataBaseContext>(x => x.UseSqlServer(ConStr));

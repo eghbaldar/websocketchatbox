@@ -1,24 +1,112 @@
-﻿<div id="chat" style="display: none;">
-    <div style="display: flex;">
-        <div id="friendListContainer" style="width: 200px; border-right: 1px solid #ccc;">
-            <!-- Friends will be inserted here -->
+﻿<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="css/site.css" rel="stylesheet" />
+
+
+<div class="container bootstrap snippets bootdey">
+    <div class="tile tile-alt" id="messages-main">
+        <div class="ms-menu">
+            <div class="ms-user clearfix">
+                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="img-avatar pull-left">
+                <div id="whoami"></div>
+            </div>
+            <div class="p-15">
+                <div class="dropdown">
+                    <a class="btn btn-primary btn-block" href="" data-toggle="dropdown">Messages <i class="caret m-l-5"></i></a>
+
+                    <ul class="dropdown-menu dm-icon w-100">
+                        <li><a href=""><i class="fa fa-envelope"></i> Messages</a></li>
+                        <li><a href=""><i class="fa fa-users"></i> Contacts</a></li>
+                        <li><a href=""><i class="fa fa-format-list-bulleted"> </i>Todo Lists</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list-group lg-alt">
+                <!-- friend list -->
+                <div id="friendListContainer" style="width: 200px; border-right: 1px solid #ccc;">
+                    <!-- Friends will be inserted here -->
+                </div>
+            </div>
         </div>
-        <!-- 💬 Chat area -->
-        <div style="flex: 1; padding: 10px;">
-            <div id="chatWindow" style="height: 300px; overflow-y: auto; border: 1px solid #aaa; margin-bottom: 10px;"></div>
-            <input id="chatMessage" placeholder="Type your message..." />
-            <div id="div_typing"></div>
-            <button onclick="sendMessage()">Send</button>
+
+        <div class="ms-body">
+            <div class="action-header clearfix">
+                <div class="visible-xs" id="ms-menu-trigger">
+                    <i class="fa fa-bars"></i>
+                </div>
+
+                <div class="pull-left hidden-xs" id="selectedFriendNameContext" hidden>
+                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="img-avatar m-r-10">
+                    <div class="lv-avatar pull-left">
+                    </div>
+                    <div id="selectedFriendName"></div>
+                </div>
+
+                <ul class="ah-actions actions">
+                    <li>
+                        <a href="">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-check"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-clock-o"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" data-toggle="dropdown" aria-expanded="true">
+                            <i class="fa fa-sort"></i>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li>
+                                <a href="">Latest</a>
+                            </li>
+                            <li>
+                                <a href="">Oldest</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" data-toggle="dropdown" aria-expanded="true">
+                            <i class="fa fa-bars"></i>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li>
+                                <a href="">Refresh</a>
+                            </li>
+                            <li>
+                                <a href="">Message Settings</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="chatWindow" style="min-height:300px; overflow-y: auto;">
+
+            </div>
+
+            <div class="msb-reply">
+                <div id="div_typing"></div>
+                <textarea id="chatMessage" placeholder="What's on your mind..."></textarea>
+                <button onclick="sendMessage()"><i class="fa fa-paper-plane-o"></i></button>
+            </div>
         </div>
     </div>
 </div>
 
 
-<div id="log"></div>
-
 <script>
     let socket;
     let authenticated = false;
+    let currentFullname = "";
 
     window.addEventListener("DOMContentLoaded", () => {
         connect(); // Automatically try connecting once page loads
@@ -38,15 +126,17 @@
             if (data.startsWith("Authenticated")) {
 
                 const parts = data.split(":");
-                if (parts.length === 2) {
-                    currentUsername = parts[1].trim(); // ✅ Get and Set username
+                if (parts.length >= 3) {
+                    currentUsername = parts[1].trim();
+                    currentFullname = parts[2].trim();
+                    $("#whoami").html(`<b>${currentFullname}</b><br/><small>@${currentUsername}</small>`);
                 }
 
-                alert("✅ Authentication succeeded!");
+
+                Swal.fire("✅ Authentication succeeded!");
 
                 authenticated = true;
 
-                document.getElementById("chat").style.display = "block";
                 loadFriends(currentUsername);
             }
 
@@ -80,7 +170,7 @@
 
                 const target = sender === currentUsername ? selectedFriend : sender;
 
-                addMessageToStore(target, `${sender}: ${message}`);
+                //addMessageToStore(target, `${sender}: ${message}`);
 
                 if (selectedFriend === target) {
                     renderChat(target);
@@ -89,17 +179,17 @@
         };
 
         socket.onclose = () => {
-            log("🔌 Disconnected.");
+            Swal.fire("🔌 Disconnected.");
         };
 
         socket.onerror = () => {
-            log("⚠️ WebSocket error");
+            Swal.fire("⚠️ WebSocket error");
         };
     }
 
     function sendMessage() {
         if (!authenticated || !selectedFriend) {
-            alert("Select a friend to chat with.");
+            Swal.fire("Select a friend to chat with.");
             return;
         }
 
@@ -111,19 +201,18 @@
             to: selectedFriend,
             message: message
         };
-
         socket.send(JSON.stringify(payload));
 
-        addMessageToStore(selectedFriend, `${currentUsername}: ${message}`);
-        renderChat(selectedFriend);
-
-        document.getElementById("chatMessage").value = "";
-    }
-
-
-    function log(msg) {
-        const div = document.getElementById("log");
-        div.innerHTML += msg + "<br/>";
+        (async () => {
+            const result = await InsertMessage(currentUsername, selectedFriend, message);
+            if (result) {
+                addMessageToStore(selectedFriend, `${currentUsername}: ${message}`);
+                renderChat(selectedFriend);
+                document.getElementById("chatMessage").value = "";
+            } else {
+                Swal.fire("Something went wrong!")
+            }
+        })();
     }
 
     function typing(msg) {
@@ -139,17 +228,32 @@
                 const container = document.getElementById("friendListContainer");
                 container.innerHTML = "";
                 var friends = data.result;
+
                 friends.forEach(friend => {
-                    const div = document.createElement("div");
-                    div.textContent = friend.friendName;
-                    div.style.cursor = "pointer";
-                    div.style.padding = "5px";
-                    div.style.borderBottom = "1px solid #ddd";
-                    div.addEventListener("click", () => {
+                    // 🔁 Replace hardcoded name/text with dynamic content
+                    const box = document.createElement("div");
+                    box.innerHTML = `
+                    <a class="list-group-item media" href="#" style="text-decoration: none;">
+                        <div class="pull-left">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="img-avatar">
+                        </div>
+                        <div class="media-body">
+                            <small class="list-group-item-heading">${friend.friendName}</small>
+                            <br/><b>@${friend.friendUsername}</b>
+                        </div>
+                    </a>
+            `.trim();
+
+                    // 👇 Handle friend selection
+                    box.addEventListener("click", () => {
                         selectedFriend = friend.friendUsername;
+                        $("#selectedFriendNameContext").attr("class", "friendbox");
+                        $("#selectedFriendName")
+                            .html(`${friend.friendName}<br/><b>@${friend.friendUsername}</b>`);
                         renderChat(friend.friendUsername);
                     });
-                    container.appendChild(div);
+
+                    container.appendChild(box);
                 });
             });
     }
@@ -183,18 +287,82 @@
         if (!messageStore[friend]) {
             messageStore[friend] = [];
         }
-        messageStore[friend].push(message);
-    }
-    function renderChat(friend) {
-        const messages = messageStore[friend] || [];
-        const chatWindow = document.getElementById("chatWindow");
-        chatWindow.innerHTML = "";
-
-        messages.forEach(msg => {
-            const div = document.createElement("div");
-            div.textContent = msg;
-            chatWindow.appendChild(div);
+        messageStore[friend].push({
+            text: message,
+            time: new Date().toLocaleString() // Store message time
         });
     }
 
+    function leftSide(message, time) {
+        return `<div class="message-feed media">
+        <div class="pull-left">
+            <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="img-avatar">
+        </div>
+        <div class="media-body">
+            <div class="mf-content">${message}</div>
+            <small class="mf-date"><i class="fa fa-clock-o"></i> ${time}</small>
+        </div>
+    </div>`.trim();
+    }
+
+    function rightSide(message, time) {
+        return `<div class="message-feed right">
+        <div class="pull-right">
+            <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="img-avatar">
+        </div>
+        <div class="media-body">
+            <div class="mf-content">${message}</div>
+            <small class="mf-date"><i class="fa fa-clock-o"></i> ${time}</small>
+        </div>
+    </div>`.trim();
+    }
+
+
+    function renderChat(friend) {
+        const messages = messageStore[friend] || [];
+        const chatWindow = document.getElementById("chatWindow");
+        chatWindow.innerHTML = ""; // Clear previous chat
+
+        messages.forEach(msgObj => {
+            const msg = msgObj.text;
+            const time = msgObj.time;
+
+            const isMine = msg.startsWith(currentUsername + ":");
+            const content = msg.split(":").slice(1).join(":").trim(); // remove "username:"
+            const html = isMine ? rightSide(content, time) : leftSide(content, time);
+
+            const wrapper = document.createElement("div");
+            wrapper.innerHTML = html;
+            chatWindow.appendChild(wrapper.firstElementChild);
+        });
+
+        chatWindow.scrollTop = chatWindow.scrollHeight;
+    }
+
+
+    async function InsertMessage(currentUsername, friendUsername, message) {
+        try {
+            const response = await $.ajax({
+                url: "/user/PostMessage",
+                type: "POST",
+                data: {
+                    SenderUsername: currentUsername,
+                    RecieverUsername: friendUsername,
+                    Message: message,
+                }
+            });
+            return response.isSuccess;
+        } catch (error) {
+            return false;
+        }
+    }
+
 </script>
+
+
+
+<!-- Template JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://www.bootdey.com/cache-js/cache-1635427806-97135bbb13d92c11d6b2a92f6a36685a.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" type="text/javascript"></script>
+<script src="js/site.js"></script>
