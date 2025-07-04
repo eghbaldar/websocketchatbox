@@ -12,8 +12,7 @@
             </div>
             <div class="p-15">
                 <div class="dropdown">
-                    <a class="btn btn-primary btn-block" href="" data-toggle="dropdown">Messages <i class="caret m-l-5"></i></a>
-
+                    <!--<a class="btn btn-primary btn-block" href="" data-toggle="dropdown">Messages <i class="caret m-l-5"></i></a>-->
                     <ul class="dropdown-menu dm-icon w-100">
                         <li><a href=""><i class="fa fa-envelope"></i> Messages</a></li>
                         <li><a href=""><i class="fa fa-users"></i> Contacts</a></li>
@@ -23,7 +22,7 @@
             </div>
             <div class="list-group lg-alt">
                 <!-- friend list -->
-                <div id="friendListContainer" style="width: 200px; border-right: 1px solid #ccc;">
+                <div id="friendListContainer">
                     <!-- Friends will be inserted here -->
                 </div>
             </div>
@@ -31,19 +30,18 @@
 
         <div class="ms-body">
             <div class="action-header clearfix">
-                <div class="visible-xs" id="ms-menu-trigger">
-                    <i class="fa fa-bars"></i>
-                </div>
-
-                <div class="pull-left hidden-xs" id="selectedFriendNameContext" hidden>
-                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="img-avatar m-r-10">
-                    <div class="lv-avatar pull-left">
-                    </div>
-                    <div id="selectedFriendName"></div>
-                </div>
-
                 <ul class="ah-actions actions">
                     <li>
+                        <div class="pull-left hidden-xs" id="selectedFriendNameContext" hidden>
+                            <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="img-avatar m-r-10">
+                            <div class="lv-avatar pull-left">
+                            </div>
+                            <div id="selectedFriendName"></div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="ah-actions-menu actions">
+                    <!--<li>
                         <a href="">
                             <i class="fa fa-trash"></i>
                         </a>
@@ -57,8 +55,8 @@
                         <a href="">
                             <i class="fa fa-clock-o"></i>
                         </a>
-                    </li>
-                    <li class="dropdown">
+                    </li>-->
+                    <!--<li class="dropdown">
                         <a href="" data-toggle="dropdown" aria-expanded="true">
                             <i class="fa fa-sort"></i>
                         </a>
@@ -71,34 +69,26 @@
                                 <a href="">Oldest</a>
                             </li>
                         </ul>
-                    </li>
+                    </li>-->
                     <li class="dropdown">
-                        <a href="" data-toggle="dropdown" aria-expanded="true">
+                        <a id="ms-menu-trigger">
                             <i class="fa fa-bars"></i>
                         </a>
-
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li>
-                                <a href="">Refresh</a>
-                            </li>
-                            <li>
-                                <a href="">Message Settings</a>
-                            </li>
-                        </ul>
                     </li>
                 </ul>
             </div>
 
-            <div id="chatWindow" style="min-height:300px; overflow-y: auto;">
 
-            </div>
-
-            <div class="msb-reply">
-                <div id="div_typing"></div>
-                <textarea id="chatMessage" placeholder="What's on your mind..."></textarea>
-                <button onclick="sendMessage()"><i class="fa fa-paper-plane-o"></i></button>
+            <div class="chat-container">
+                <div id="chatWindow"></div>
+                <div class="msb-reply">
+                    <div id="div_typing"></div>
+                    <textarea id="chatMessage" placeholder="What's on your mind..."></textarea>
+                    <button onclick="sendMessage()"><i class="fa fa-paper-plane-o"></i></button>
+                </div>
             </div>
         </div>
+
     </div>
 </div>
 
@@ -170,7 +160,7 @@
 
                 const target = sender === currentUsername ? selectedFriend : sender;
 
-                //addMessageToStore(target, `${sender}: ${message}`);
+                addMessageToStore(target, `${sender}: ${message}`);
 
                 if (selectedFriend === target) {
                     renderChat(target);
@@ -206,8 +196,8 @@
         (async () => {
             const result = await InsertMessage(currentUsername, selectedFriend, message);
             if (result) {
-                addMessageToStore(selectedFriend, `${currentUsername}: ${message}`);
-                renderChat(selectedFriend);
+                //addMessageToStore(selectedFriend, `${currentUsername}: ${message}`);
+                //renderChat(selectedFriend);
                 document.getElementById("chatMessage").value = "";
             } else {
                 Swal.fire("Something went wrong!")
@@ -247,10 +237,13 @@
                     // 👇 Handle friend selection
                     box.addEventListener("click", () => {
                         selectedFriend = friend.friendUsername;
+
                         $("#selectedFriendNameContext").attr("class", "friendbox");
-                        $("#selectedFriendName")
-                            .html(`${friend.friendName}<br/><b>@${friend.friendUsername}</b>`);
-                        renderChat(friend.friendUsername);
+                        $("#selectedFriendName").html(`${friend.friendName}<br/><b>@${friend.friendUsername}</b>`);
+
+                        GetMessages(currentUsername, friend.friendName)
+
+                        //renderChat(friend.friendUsername);
                     });
 
                     container.appendChild(box);
@@ -258,6 +251,23 @@
             });
     }
 
+    // load messages
+    function GetMessages(currentUsername, friendUsername) {
+        fetch(`/user/GetMessages?currentUsername=${currentUsername}&friendUsername=${friendUsername}`)
+            .then(res => res.json())
+            .then(data => {
+                //alert(JSON.stringify(data));
+                const formatted = data.result.map(m => ({
+                    text: `${m.senderUsername}: ${m.message}`,
+                    time: new Date(m.insertDate).toLocaleString() // or just m.timestamp if formatted already
+                }));
+
+                // Optionally store in local memory
+                messageStore[friendUsername] = formatted;
+
+                renderChat(friendUsername, formatted);
+            });
+    }
     //
 
     let typingTimeout;
@@ -311,24 +321,25 @@
             <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="img-avatar">
         </div>
         <div class="media-body">
-            <div class="mf-content">${message}</div>
-            <small class="mf-date"><i class="fa fa-clock-o"></i> ${time}</small>
+            <div class="mf-content ">${message}</div>
+            <small class="mf-date   "><i class="fa fa-clock-o"></i> ${time}</small>
         </div>
     </div>`.trim();
     }
 
 
-    function renderChat(friend) {
-        const messages = messageStore[friend] || [];
+    function renderChat(friend, externalMessages = null) {
         const chatWindow = document.getElementById("chatWindow");
-        chatWindow.innerHTML = ""; // Clear previous chat
+        chatWindow.innerHTML = "";
+
+        const messages = externalMessages || messageStore[friend] || [];
 
         messages.forEach(msgObj => {
             const msg = msgObj.text;
             const time = msgObj.time;
 
             const isMine = msg.startsWith(currentUsername + ":");
-            const content = msg.split(":").slice(1).join(":").trim(); // remove "username:"
+            const content = msg.split(":").slice(1).join(":").trim();
             const html = isMine ? rightSide(content, time) : leftSide(content, time);
 
             const wrapper = document.createElement("div");
@@ -338,6 +349,7 @@
 
         chatWindow.scrollTop = chatWindow.scrollHeight;
     }
+
 
 
     async function InsertMessage(currentUsername, friendUsername, message) {
@@ -357,6 +369,16 @@
         }
     }
 
+</script>
+<script>
+    function handleLoadLayout() {
+        $("#selectedFriendNameContext").attr("class", "friendbox");
+        $("#selectedFriendName").html(`<h4>Benal Messanger!</h4>`);
+
+    }
+
+    //// Run on load
+    window.addEventListener('load', handleLoadLayout);
 </script>
 
 

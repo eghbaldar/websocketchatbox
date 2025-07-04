@@ -33,6 +33,7 @@ body {
     }
 }
 
+
 @media (max-width:767px) {
     #messages-main .ms-menu {
         height: calc(100% - 58px);
@@ -68,25 +69,6 @@ body {
     right: 30px;
     box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
 }
-
-#ms-menu-trigger {
-    user-select: none;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 50px;
-    height: 100%;
-    padding-right: 10px;
-    padding-top: 19px;
-}
-
-    #ms-menu-trigger i {
-        font-size: 21px;
-    }
-
-    #ms-menu-trigger.toggled i:before {
-        content: '\f2ea'
-    }
 
 .fc-toolbar:before, .login-content:after {
     content: ""
@@ -198,6 +180,12 @@ body {
 
 .ah-actions {
     z-index: 3;
+    float: left;
+    margin-top: 7px;
+    position: relative;
+}
+.ah-actions-menu {
+    z-index: 3;
     float: right;
     margin-top: 7px;
     position: relative;
@@ -207,6 +195,14 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+#backToFriends{
+    display:none;
+}
+@media screen and (width <= 400px) {
+    #backToFriends {
+        display: inline;
+    }
 }
 
     .actions > li {
@@ -229,27 +225,10 @@ body {
 .ms-body {
     background: #fff;
 }
-
-#ms-menu-trigger {
-    user-select: none;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 50px;
-    height: 100%;
-    padding-right: 10px;
-    padding-top: 19px;
-    cursor: pointer;
+#ms-menu-trigger{
+    cursor:pointer;
 }
 
-#ms-menu-trigger, .message-feed.right {
-    text-align: right;
-}
-
-#ms-menu-trigger, .toggle-switch {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-}
 .friendbox {
     display: flex !important;
 }
@@ -257,3 +236,65 @@ body {
 #selectedFriendName {
     padding-left: 15px;
 }
+
+#messages-main {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.ms-menu {
+    width: 250px;
+    overflow-y: auto;
+    border-right: 1px solid #ccc;
+}
+
+.ms-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#chatWindow {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.msb-reply {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#chatMessage {
+    width: 100%;
+    min-height: 60px;
+    resize: none;
+}
+.ms-menu {
+    box-shadow: 31px 31px 38px -16px rgba(0,0,0,0.62);
+    -webkit-box-shadow: 31px 31px 38px -16px rgba(0,0,0,0.62);
+    -moz-box-shadow: 31px 31px 38px -16px rgba(0,0,0,0.62);
+}
+.message-feed.right {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+    .message-feed.right .media-body {
+        text-align: right;
+    }

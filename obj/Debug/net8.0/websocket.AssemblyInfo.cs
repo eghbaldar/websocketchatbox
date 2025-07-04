@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("websocket")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a26f727a3fcab81ea01fc0a95fd27e5a149d086")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47d1c804c8a40e0ba0b6d55e09c0f631a39d517a")]
 [assembly: System.Reflection.AssemblyProductAttribute("websocket")]
 [assembly: System.Reflection.AssemblyTitleAttribute("websocket")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
