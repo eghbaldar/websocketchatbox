@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\websocket.ekloryea99.bundle.scp.css"
     },
     {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
       "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -13,8 +21,44 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\functions\\auth\\auth.css",
+      "PackagePath": "staticwebassets\\functions\\auth\\auth.css"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\functions\\auth\\auth.js",
+      "PackagePath": "staticwebassets\\functions\\auth\\auth.js"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\imgs\\illustration.png",
+      "PackagePath": "staticwebassets\\imgs\\illustration.png"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\imgs\\logo.png",
+      "PackagePath": "staticwebassets\\imgs\\logo.png"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\imgs\\noTrespassing.jpg",
+      "PackagePath": "staticwebassets\\imgs\\noTrespassing.jpg"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\cache-1635427806-97135bbb13d92c11d6b2a92f6a36685a.js",
+      "PackagePath": "staticwebassets\\js\\cache-1635427806-97135bbb13d92c11d6b2a92f6a36685a.js"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\functions.js",
+      "PackagePath": "staticwebassets\\js\\functions.js"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
       "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\sweetalert2@11.js",
+      "PackagePath": "staticwebassets\\js\\sweetalert2@11.js"
     },
     {
       "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\lib\\bootstrap\\LICENSE",
@@ -243,6 +287,50 @@
     {
       "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\login.html",
+      "PackagePath": "staticwebassets\\login.html"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\Screenshot2025-07-0.png",
+      "PackagePath": "staticwebassets\\users_materials\\headshots\\Screenshot2025-07-0.png"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2015-07-12_00-00-27.jpg",
+      "PackagePath": "staticwebassets\\users_materials\\headshots\\photo_2015-07-12_00-00-27.jpg"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2019-09-14_17-47-16.jpg",
+      "PackagePath": "staticwebassets\\users_materials\\headshots\\photo_2019-09-14_17-47-16.jpg"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2023-01-03_21-01-17.jpg",
+      "PackagePath": "staticwebassets\\users_materials\\headshots\\photo_2023-01-03_21-01-17.jpg"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2023-10-06_00-00-52.jpg",
+      "PackagePath": "staticwebassets\\users_materials\\headshots\\photo_2023-10-06_00-00-52.jpg"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2023-10-06_00-00-58.jpg",
+      "PackagePath": "staticwebassets\\users_materials\\headshots\\photo_2023-10-06_00-00-58.jpg"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2023-11-12_08-11-32.jpg",
+      "PackagePath": "staticwebassets\\users_materials\\headshots\\photo_2023-11-12_08-11-32.jpg"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2024-05-05_22-56-01.jpg",
+      "PackagePath": "staticwebassets\\users_materials\\headshots\\photo_2024-05-05_22-56-01.jpg"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2024-12-22_22-43-39.jpg",
+      "PackagePath": "staticwebassets\\users_materials\\headshots\\photo_2024-12-22_22-43-39.jpg"
+    },
+    {
+      "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2025-06-27_23-51-38.jpg",
+      "PackagePath": "staticwebassets\\users_materials\\headshots\\photo_2025-06-27_23-51-38.jpg"
     },
     {
       "Id": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\web.html",

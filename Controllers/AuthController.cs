@@ -47,5 +47,12 @@ namespace websocket.Controllers
                 return Json(new { IsSuccess = false });
             }
         }
+        [HttpGet]
+        public IActionResult Logout()
+        {
+            Response.Cookies.Delete("KingChatter");
+            return Redirect("/"); // or use Json if you're in SPA
+        }
+
     }
 }

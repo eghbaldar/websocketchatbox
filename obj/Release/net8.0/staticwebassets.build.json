@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4yGUaNAs+emli9OLyP85L35XaiQ6nrSBP+CXwRW/AqA=",
+  "Hash": "lcjiHbS4BaaQvWK557XKE0MG8dlBQ3lrTpZCb9Az4tk=",
   "Source": "websocket",
   "BasePath": "_content/websocket",
   "Mode": "Default",
@@ -59,6 +59,48 @@
       "OriginalItemSpec": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\websocket.bundle.scp.css"
     },
     {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\css\\bootstrap.min.css",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "css/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ctxrk56t0c",
+      "Integrity": "8EtRe6XWoFEEhWiaPkLawAD1FkD9cbmGgEy6F46uQqU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\css\\font-awesome.min.css",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "css/font-awesome.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s09g01fz0o",
+      "Integrity": "VBrFgheoreGl4pKmWgZh3J23pJrhNlSUOBek+8Z2Gv0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\font-awesome.min.css"
+    },
+    {
       "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\css\\site.css",
       "SourceId": "websocket",
       "SourceType": "Discovered",
@@ -73,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c2tiyv64ts",
-      "Integrity": "pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=",
+      "Fingerprint": "rrwuzsa7i7",
+      "Integrity": "Z1RpfMkEu5M1hKZj598RCAEwlxZrb5GxqB1SXop5b6M=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -101,6 +143,174 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\functions\\auth\\auth.css",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "functions/auth/auth#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g47fwowy6y",
+      "Integrity": "0NGS3deSlQYVCRvcyYk0wwYzsJjH7A4MZoxN+2mVXu0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\functions\\auth\\auth.css"
+    },
+    {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\functions\\auth\\auth.js",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "functions/auth/auth#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yi08iirf4x",
+      "Integrity": "VgGZSRSrl6SfAwbGLM59GHcrAmVJNYf+uiYJFru9c8U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\functions\\auth\\auth.js"
+    },
+    {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\imgs\\illustration.png",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "imgs/illustration#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ykkcrywfxn",
+      "Integrity": "MnaL9hjJgYxtM031WBiUmvrC3Grmqp5xofecYyuv8a8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\illustration.png"
+    },
+    {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\imgs\\logo.png",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "imgs/logo#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "74i7l8yf33",
+      "Integrity": "d4z5FdPvfJQ6LlDl71PeuAAOXuElYne7XL/EH3XDu4Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\logo.png"
+    },
+    {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\imgs\\noTrespassing.jpg",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "imgs/noTrespassing#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3v4ua4fss3",
+      "Integrity": "Hz4JTwb/8mkAbvGSfAGXwrISXFB7yp9WJtIaLHJJh7o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\noTrespassing.jpg"
+    },
+    {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\cache-1635427806-97135bbb13d92c11d6b2a92f6a36685a.js",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "js/cache-1635427806-97135bbb13d92c11d6b2a92f6a36685a#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "em6p873ejs",
+      "Integrity": "xiHRTUN+gN468rqxbxBmgVoF5EplHNmVJg7EiyPSx7Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\cache-1635427806-97135bbb13d92c11d6b2a92f6a36685a.js"
+    },
+    {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\functions.js",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "js/functions#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "barc70ukd8",
+      "Integrity": "3aM1kJOuL8OmqtK7TRw2PPjS11udS8L1LEjpvFdr5G8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\functions.js"
+    },
+    {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\popper.min.js",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "js/popper.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jics2szdot",
+      "Integrity": "pS96pU17yq+gVu4KBQJi38VpSuKN7otMrDQprzf/DWY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\popper.min.js"
+    },
+    {
       "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\site.js",
       "SourceId": "websocket",
       "SourceType": "Discovered",
@@ -115,11 +325,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xtxxf3hu2r",
-      "Integrity": "hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=",
+      "Fingerprint": "ee13jl1oim",
+      "Integrity": "Kl+IAnNXJWDllZ9JdaApZ5Z6xDymYwwy54z0VGiEkEI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\sweetalert2@11.js",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "js/sweetalert2@11#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3f1uyff8g8",
+      "Integrity": "Ua8fKA4E1l7RSqT5HOjK0m/PrSwP41XFTs++qmtWey8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\sweetalert2@11.js"
     },
     {
       "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -1319,6 +1550,237 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\login.html",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "login#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7xetrorhmh",
+      "Integrity": "yzu7lJ3MpgFARiVxotc/8vWXekN4WNp71ozT5jL++pQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\login.html"
+    },
+    {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2015-07-12_00-00-27.jpg",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "users_materials/headshots/photo_2015-07-12_00-00-27#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rf2n6h3zez",
+      "Integrity": "6fmGTnVF/WHHh0vo8rso0OXBkDEw/7A4APgsWqIiRa8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\users_materials\\headshots\\photo_2015-07-12_00-00-27.jpg"
+    },
+    {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2019-09-14_17-47-16.jpg",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "users_materials/headshots/photo_2019-09-14_17-47-16#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xw6klvfzy2",
+      "Integrity": "/97+22pfl5f5V5A3YocK3MKt4ZEu3b+CCDTcFE9cVvo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\users_materials\\headshots\\photo_2019-09-14_17-47-16.jpg"
+    },
+    {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2023-01-03_21-01-17.jpg",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "users_materials/headshots/photo_2023-01-03_21-01-17#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0i7havgpae",
+      "Integrity": "OKYdjQiXBekzsHQ38T5JlNWOas+HnXGml+sVscIMSzI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\users_materials\\headshots\\photo_2023-01-03_21-01-17.jpg"
+    },
+    {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2023-10-06_00-00-52.jpg",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "users_materials/headshots/photo_2023-10-06_00-00-52#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gztiofjezd",
+      "Integrity": "tDMPgfeeDk+BV+2LkUNedtlNNT53QSwBrbOPrLCp3Uo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\users_materials\\headshots\\photo_2023-10-06_00-00-52.jpg"
+    },
+    {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2023-10-06_00-00-58.jpg",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "users_materials/headshots/photo_2023-10-06_00-00-58#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ezibtmvnlo",
+      "Integrity": "2jl5ROMnKYh53d8bx68Yju5WG8CyftZ6sTU67UTyHVA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\users_materials\\headshots\\photo_2023-10-06_00-00-58.jpg"
+    },
+    {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2023-11-12_08-11-32.jpg",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "users_materials/headshots/photo_2023-11-12_08-11-32#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ccn8jzx48t",
+      "Integrity": "1Gh4jMEmfxaelAoC6fFy8gDptQBQyayphLc15AWKeps=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\users_materials\\headshots\\photo_2023-11-12_08-11-32.jpg"
+    },
+    {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2024-05-05_22-56-01.jpg",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "users_materials/headshots/photo_2024-05-05_22-56-01#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w9bnpuuia2",
+      "Integrity": "LBZ5Yc+uxXXrE55KwL/0sTDPdGmj4AUVVdVfNkWfVrQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\users_materials\\headshots\\photo_2024-05-05_22-56-01.jpg"
+    },
+    {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2024-12-22_22-43-39.jpg",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "users_materials/headshots/photo_2024-12-22_22-43-39#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "o6uzyxhc8s",
+      "Integrity": "kBmz7Gi0iDAilWzXEMqs37SmtcESzZn9oW1as9Ai/54=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\users_materials\\headshots\\photo_2024-12-22_22-43-39.jpg"
+    },
+    {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2025-06-27_23-51-38.jpg",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "users_materials/headshots/photo_2025-06-27_23-51-38#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w26ffgd2s4",
+      "Integrity": "eDTuL9Bg0PXDYQ88dHZ7iwsBqCXJXMYSSyOkz7eS/CY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\users_materials\\headshots\\photo_2025-06-27_23-51-38.jpg"
+    },
+    {
+      "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\Screenshot2025-07-0.png",
+      "SourceId": "websocket",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\",
+      "BasePath": "_content/websocket",
+      "RelativePath": "users_materials/headshots/Screenshot2025-07-0#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9ke3s98oie",
+      "Integrity": "eUz4QGDy97ZlEiQkKfqYeEe4SUoyrPUGzD5QO49MYw4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\users_materials\\headshots\\Screenshot2025-07-0.png"
+    },
+    {
       "Identity": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\web.html",
       "SourceId": "websocket",
       "SourceType": "Discovered",
@@ -1333,8 +1795,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "f3bjanm0w0",
-      "Integrity": "FduB8vb/SW2uUJDgLXIlh3TQRAo0OEPsyjrfOaAH9iI=",
+      "Fingerprint": "x9ya1b3z92",
+      "Integrity": "BWkXJst/Z2MFJzh4M7vtId548ZJ9zRmNIhsdOzl9BcM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\web.html"
@@ -1342,8 +1804,8 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.c2tiyv64ts.css",
-      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\css\\site.css",
+      "Route": "css/bootstrap.min.css",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1352,7 +1814,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "117305"
         },
         {
           "Name": "Content-Type",
@@ -1360,11 +1822,48 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"8EtRe6XWoFEEhWiaPkLawAD1FkD9cbmGgEy6F46uQqU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 21:54:14 GMT"
+          "Value": "Sat, 05 Jul 2025 21:48:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8EtRe6XWoFEEhWiaPkLawAD1FkD9cbmGgEy6F46uQqU="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap.min.ctxrk56t0c.css",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\css\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117305"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8EtRe6XWoFEEhWiaPkLawAD1FkD9cbmGgEy6F46uQqU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Jul 2025 21:48:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1374,15 +1873,97 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "c2tiyv64ts"
+          "Value": "ctxrk56t0c"
         },
         {
           "Name": "label",
-          "Value": "css/site.css"
+          "Value": "css/bootstrap.min.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-8EtRe6XWoFEEhWiaPkLawAD1FkD9cbmGgEy6F46uQqU="
+        }
+      ]
+    },
+    {
+      "Route": "css/font-awesome.min.css",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\css\\font-awesome.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23739"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VBrFgheoreGl4pKmWgZh3J23pJrhNlSUOBek+8Z2Gv0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Jul 2025 21:48:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VBrFgheoreGl4pKmWgZh3J23pJrhNlSUOBek+8Z2Gv0="
+        }
+      ]
+    },
+    {
+      "Route": "css/font-awesome.min.s09g01fz0o.css",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\css\\font-awesome.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23739"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VBrFgheoreGl4pKmWgZh3J23pJrhNlSUOBek+8Z2Gv0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Jul 2025 21:48:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s09g01fz0o"
+        },
+        {
+          "Name": "label",
+          "Value": "css/font-awesome.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VBrFgheoreGl4pKmWgZh3J23pJrhNlSUOBek+8Z2Gv0="
         }
       ]
     },
@@ -1397,7 +1978,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "7404"
         },
         {
           "Name": "Content-Type",
@@ -1405,11 +1986,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"Z1RpfMkEu5M1hKZj598RCAEwlxZrb5GxqB1SXop5b6M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 21:54:14 GMT"
+          "Value": "Sun, 06 Jul 2025 19:24:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1419,7 +2000,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-Z1RpfMkEu5M1hKZj598RCAEwlxZrb5GxqB1SXop5b6M="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.rrwuzsa7i7.css",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7404"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z1RpfMkEu5M1hKZj598RCAEwlxZrb5GxqB1SXop5b6M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 19:24:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rrwuzsa7i7"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z1RpfMkEu5M1hKZj598RCAEwlxZrb5GxqB1SXop5b6M="
         }
       ]
     },
@@ -1506,6 +2132,707 @@
       ]
     },
     {
+      "Route": "functions/auth/auth.css",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\functions\\auth\\auth.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4946"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0NGS3deSlQYVCRvcyYk0wwYzsJjH7A4MZoxN+2mVXu0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Jun 2025 22:06:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0NGS3deSlQYVCRvcyYk0wwYzsJjH7A4MZoxN+2mVXu0="
+        }
+      ]
+    },
+    {
+      "Route": "functions/auth/auth.g47fwowy6y.css",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\functions\\auth\\auth.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4946"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0NGS3deSlQYVCRvcyYk0wwYzsJjH7A4MZoxN+2mVXu0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Jun 2025 22:06:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g47fwowy6y"
+        },
+        {
+          "Name": "label",
+          "Value": "functions/auth/auth.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0NGS3deSlQYVCRvcyYk0wwYzsJjH7A4MZoxN+2mVXu0="
+        }
+      ]
+    },
+    {
+      "Route": "functions/auth/auth.js",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\functions\\auth\\auth.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2048"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VgGZSRSrl6SfAwbGLM59GHcrAmVJNYf+uiYJFru9c8U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 19:52:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VgGZSRSrl6SfAwbGLM59GHcrAmVJNYf+uiYJFru9c8U="
+        }
+      ]
+    },
+    {
+      "Route": "functions/auth/auth.yi08iirf4x.js",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\functions\\auth\\auth.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2048"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VgGZSRSrl6SfAwbGLM59GHcrAmVJNYf+uiYJFru9c8U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 19:52:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yi08iirf4x"
+        },
+        {
+          "Name": "label",
+          "Value": "functions/auth/auth.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VgGZSRSrl6SfAwbGLM59GHcrAmVJNYf+uiYJFru9c8U="
+        }
+      ]
+    },
+    {
+      "Route": "imgs/illustration.png",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\imgs\\illustration.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "116368"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MnaL9hjJgYxtM031WBiUmvrC3Grmqp5xofecYyuv8a8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Jul 2025 21:48:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MnaL9hjJgYxtM031WBiUmvrC3Grmqp5xofecYyuv8a8="
+        }
+      ]
+    },
+    {
+      "Route": "imgs/illustration.ykkcrywfxn.png",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\imgs\\illustration.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "116368"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MnaL9hjJgYxtM031WBiUmvrC3Grmqp5xofecYyuv8a8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Jul 2025 21:48:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ykkcrywfxn"
+        },
+        {
+          "Name": "label",
+          "Value": "imgs/illustration.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MnaL9hjJgYxtM031WBiUmvrC3Grmqp5xofecYyuv8a8="
+        }
+      ]
+    },
+    {
+      "Route": "imgs/logo.74i7l8yf33.png",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\imgs\\logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18624"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d4z5FdPvfJQ6LlDl71PeuAAOXuElYne7XL/EH3XDu4Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Jul 2025 21:55:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "74i7l8yf33"
+        },
+        {
+          "Name": "label",
+          "Value": "imgs/logo.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d4z5FdPvfJQ6LlDl71PeuAAOXuElYne7XL/EH3XDu4Q="
+        }
+      ]
+    },
+    {
+      "Route": "imgs/logo.png",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\imgs\\logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18624"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d4z5FdPvfJQ6LlDl71PeuAAOXuElYne7XL/EH3XDu4Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Jul 2025 21:55:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-d4z5FdPvfJQ6LlDl71PeuAAOXuElYne7XL/EH3XDu4Q="
+        }
+      ]
+    },
+    {
+      "Route": "imgs/noTrespassing.3v4ua4fss3.jpg",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\imgs\\noTrespassing.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "143266"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Hz4JTwb/8mkAbvGSfAGXwrISXFB7yp9WJtIaLHJJh7o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Jun 2025 21:58:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3v4ua4fss3"
+        },
+        {
+          "Name": "label",
+          "Value": "imgs/noTrespassing.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Hz4JTwb/8mkAbvGSfAGXwrISXFB7yp9WJtIaLHJJh7o="
+        }
+      ]
+    },
+    {
+      "Route": "imgs/noTrespassing.jpg",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\imgs\\noTrespassing.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "143266"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Hz4JTwb/8mkAbvGSfAGXwrISXFB7yp9WJtIaLHJJh7o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Jun 2025 21:58:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Hz4JTwb/8mkAbvGSfAGXwrISXFB7yp9WJtIaLHJJh7o="
+        }
+      ]
+    },
+    {
+      "Route": "js/cache-1635427806-97135bbb13d92c11d6b2a92f6a36685a.em6p873ejs.js",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\cache-1635427806-97135bbb13d92c11d6b2a92f6a36685a.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "95788"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xiHRTUN+gN468rqxbxBmgVoF5EplHNmVJg7EiyPSx7Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Jul 2025 21:48:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "em6p873ejs"
+        },
+        {
+          "Name": "label",
+          "Value": "js/cache-1635427806-97135bbb13d92c11d6b2a92f6a36685a.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xiHRTUN+gN468rqxbxBmgVoF5EplHNmVJg7EiyPSx7Q="
+        }
+      ]
+    },
+    {
+      "Route": "js/cache-1635427806-97135bbb13d92c11d6b2a92f6a36685a.js",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\cache-1635427806-97135bbb13d92c11d6b2a92f6a36685a.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "95788"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xiHRTUN+gN468rqxbxBmgVoF5EplHNmVJg7EiyPSx7Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Jul 2025 21:48:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xiHRTUN+gN468rqxbxBmgVoF5EplHNmVJg7EiyPSx7Q="
+        }
+      ]
+    },
+    {
+      "Route": "js/functions.barc70ukd8.js",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\functions.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14058"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3aM1kJOuL8OmqtK7TRw2PPjS11udS8L1LEjpvFdr5G8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 19:39:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "barc70ukd8"
+        },
+        {
+          "Name": "label",
+          "Value": "js/functions.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3aM1kJOuL8OmqtK7TRw2PPjS11udS8L1LEjpvFdr5G8="
+        }
+      ]
+    },
+    {
+      "Route": "js/functions.js",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\functions.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14058"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3aM1kJOuL8OmqtK7TRw2PPjS11udS8L1LEjpvFdr5G8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 19:39:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3aM1kJOuL8OmqtK7TRw2PPjS11udS8L1LEjpvFdr5G8="
+        }
+      ]
+    },
+    {
+      "Route": "js/popper.min.jics2szdot.js",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\popper.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19188"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pS96pU17yq+gVu4KBQJi38VpSuKN7otMrDQprzf/DWY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Jul 2025 21:48:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jics2szdot"
+        },
+        {
+          "Name": "label",
+          "Value": "js/popper.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pS96pU17yq+gVu4KBQJi38VpSuKN7otMrDQprzf/DWY="
+        }
+      ]
+    },
+    {
+      "Route": "js/popper.min.js",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\popper.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19188"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pS96pU17yq+gVu4KBQJi38VpSuKN7otMrDQprzf/DWY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Jul 2025 21:48:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pS96pU17yq+gVu4KBQJi38VpSuKN7otMrDQprzf/DWY="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.ee13jl1oim.js",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2175"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Kl+IAnNXJWDllZ9JdaApZ5Z6xDymYwwy54z0VGiEkEI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 19:36:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ee13jl1oim"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Kl+IAnNXJWDllZ9JdaApZ5Z6xDymYwwy54z0VGiEkEI="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\site.js",
       "Selectors": [],
@@ -1516,7 +2843,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "2175"
         },
         {
           "Name": "Content-Type",
@@ -1524,11 +2851,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "\"Kl+IAnNXJWDllZ9JdaApZ5Z6xDymYwwy54z0VGiEkEI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 21:54:14 GMT"
+          "Value": "Sun, 06 Jul 2025 19:36:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1538,13 +2865,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-Kl+IAnNXJWDllZ9JdaApZ5Z6xDymYwwy54z0VGiEkEI="
         }
       ]
     },
     {
-      "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\site.js",
+      "Route": "js/sweetalert2@11.3f1uyff8g8.js",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\sweetalert2@11.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1553,7 +2880,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "78778"
         },
         {
           "Name": "Content-Type",
@@ -1561,11 +2888,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "\"Ua8fKA4E1l7RSqT5HOjK0m/PrSwP41XFTs++qmtWey8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 21:54:14 GMT"
+          "Value": "Sat, 05 Jul 2025 21:48:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1575,15 +2902,52 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
+          "Value": "3f1uyff8g8"
         },
         {
           "Name": "label",
-          "Value": "js/site.js"
+          "Value": "js/sweetalert2@11.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-Ua8fKA4E1l7RSqT5HOjK0m/PrSwP41XFTs++qmtWey8="
+        }
+      ]
+    },
+    {
+      "Route": "js/sweetalert2@11.js",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\sweetalert2@11.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "78778"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ua8fKA4E1l7RSqT5HOjK0m/PrSwP41XFTs++qmtWey8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Jul 2025 21:48:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ua8fKA4E1l7RSqT5HOjK0m/PrSwP41XFTs++qmtWey8="
         }
       ]
     },
@@ -6262,8 +7626,8 @@
       ]
     },
     {
-      "Route": "web.f3bjanm0w0.html",
-      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\web.html",
+      "Route": "login.7xetrorhmh.html",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\login.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6272,7 +7636,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1092"
+          "Value": "9030"
         },
         {
           "Name": "Content-Type",
@@ -6280,11 +7644,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FduB8vb/SW2uUJDgLXIlh3TQRAo0OEPsyjrfOaAH9iI=\""
+          "Value": "\"yzu7lJ3MpgFARiVxotc/8vWXekN4WNp71ozT5jL++pQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 22:23:24 GMT"
+          "Value": "Sat, 05 Jul 2025 21:49:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6294,15 +7658,872 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "f3bjanm0w0"
+          "Value": "7xetrorhmh"
         },
         {
           "Name": "label",
-          "Value": "web.html"
+          "Value": "login.html"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-FduB8vb/SW2uUJDgLXIlh3TQRAo0OEPsyjrfOaAH9iI="
+          "Value": "sha256-yzu7lJ3MpgFARiVxotc/8vWXekN4WNp71ozT5jL++pQ="
+        }
+      ]
+    },
+    {
+      "Route": "login.html",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9030"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yzu7lJ3MpgFARiVxotc/8vWXekN4WNp71ozT5jL++pQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Jul 2025 21:49:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yzu7lJ3MpgFARiVxotc/8vWXekN4WNp71ozT5jL++pQ="
+        }
+      ]
+    },
+    {
+      "Route": "users_materials/headshots/photo_2015-07-12_00-00-27.jpg",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2015-07-12_00-00-27.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "58293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6fmGTnVF/WHHh0vo8rso0OXBkDEw/7A4APgsWqIiRa8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 17:37:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6fmGTnVF/WHHh0vo8rso0OXBkDEw/7A4APgsWqIiRa8="
+        }
+      ]
+    },
+    {
+      "Route": "users_materials/headshots/photo_2015-07-12_00-00-27.rf2n6h3zez.jpg",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2015-07-12_00-00-27.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "58293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6fmGTnVF/WHHh0vo8rso0OXBkDEw/7A4APgsWqIiRa8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 17:37:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rf2n6h3zez"
+        },
+        {
+          "Name": "label",
+          "Value": "users_materials/headshots/photo_2015-07-12_00-00-27.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6fmGTnVF/WHHh0vo8rso0OXBkDEw/7A4APgsWqIiRa8="
+        }
+      ]
+    },
+    {
+      "Route": "users_materials/headshots/photo_2019-09-14_17-47-16.jpg",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2019-09-14_17-47-16.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "90070"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/97+22pfl5f5V5A3YocK3MKt4ZEu3b+CCDTcFE9cVvo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 17:26:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/97+22pfl5f5V5A3YocK3MKt4ZEu3b+CCDTcFE9cVvo="
+        }
+      ]
+    },
+    {
+      "Route": "users_materials/headshots/photo_2019-09-14_17-47-16.xw6klvfzy2.jpg",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2019-09-14_17-47-16.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "90070"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/97+22pfl5f5V5A3YocK3MKt4ZEu3b+CCDTcFE9cVvo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 17:26:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xw6klvfzy2"
+        },
+        {
+          "Name": "label",
+          "Value": "users_materials/headshots/photo_2019-09-14_17-47-16.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/97+22pfl5f5V5A3YocK3MKt4ZEu3b+CCDTcFE9cVvo="
+        }
+      ]
+    },
+    {
+      "Route": "users_materials/headshots/photo_2023-01-03_21-01-17.0i7havgpae.jpg",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2023-01-03_21-01-17.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "82799"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OKYdjQiXBekzsHQ38T5JlNWOas+HnXGml+sVscIMSzI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 17:38:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0i7havgpae"
+        },
+        {
+          "Name": "label",
+          "Value": "users_materials/headshots/photo_2023-01-03_21-01-17.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OKYdjQiXBekzsHQ38T5JlNWOas+HnXGml+sVscIMSzI="
+        }
+      ]
+    },
+    {
+      "Route": "users_materials/headshots/photo_2023-01-03_21-01-17.jpg",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2023-01-03_21-01-17.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "82799"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OKYdjQiXBekzsHQ38T5JlNWOas+HnXGml+sVscIMSzI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 17:38:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OKYdjQiXBekzsHQ38T5JlNWOas+HnXGml+sVscIMSzI="
+        }
+      ]
+    },
+    {
+      "Route": "users_materials/headshots/photo_2023-10-06_00-00-52.gztiofjezd.jpg",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2023-10-06_00-00-52.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93788"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tDMPgfeeDk+BV+2LkUNedtlNNT53QSwBrbOPrLCp3Uo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 17:26:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gztiofjezd"
+        },
+        {
+          "Name": "label",
+          "Value": "users_materials/headshots/photo_2023-10-06_00-00-52.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tDMPgfeeDk+BV+2LkUNedtlNNT53QSwBrbOPrLCp3Uo="
+        }
+      ]
+    },
+    {
+      "Route": "users_materials/headshots/photo_2023-10-06_00-00-52.jpg",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2023-10-06_00-00-52.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93788"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tDMPgfeeDk+BV+2LkUNedtlNNT53QSwBrbOPrLCp3Uo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 17:26:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tDMPgfeeDk+BV+2LkUNedtlNNT53QSwBrbOPrLCp3Uo="
+        }
+      ]
+    },
+    {
+      "Route": "users_materials/headshots/photo_2023-10-06_00-00-58.ezibtmvnlo.jpg",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2023-10-06_00-00-58.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2jl5ROMnKYh53d8bx68Yju5WG8CyftZ6sTU67UTyHVA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 17:26:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ezibtmvnlo"
+        },
+        {
+          "Name": "label",
+          "Value": "users_materials/headshots/photo_2023-10-06_00-00-58.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2jl5ROMnKYh53d8bx68Yju5WG8CyftZ6sTU67UTyHVA="
+        }
+      ]
+    },
+    {
+      "Route": "users_materials/headshots/photo_2023-10-06_00-00-58.jpg",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2023-10-06_00-00-58.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2jl5ROMnKYh53d8bx68Yju5WG8CyftZ6sTU67UTyHVA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 17:26:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2jl5ROMnKYh53d8bx68Yju5WG8CyftZ6sTU67UTyHVA="
+        }
+      ]
+    },
+    {
+      "Route": "users_materials/headshots/photo_2023-11-12_08-11-32.ccn8jzx48t.jpg",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2023-11-12_08-11-32.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "107870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1Gh4jMEmfxaelAoC6fFy8gDptQBQyayphLc15AWKeps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 17:58:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ccn8jzx48t"
+        },
+        {
+          "Name": "label",
+          "Value": "users_materials/headshots/photo_2023-11-12_08-11-32.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Gh4jMEmfxaelAoC6fFy8gDptQBQyayphLc15AWKeps="
+        }
+      ]
+    },
+    {
+      "Route": "users_materials/headshots/photo_2023-11-12_08-11-32.jpg",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2023-11-12_08-11-32.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "107870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1Gh4jMEmfxaelAoC6fFy8gDptQBQyayphLc15AWKeps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 17:58:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1Gh4jMEmfxaelAoC6fFy8gDptQBQyayphLc15AWKeps="
+        }
+      ]
+    },
+    {
+      "Route": "users_materials/headshots/photo_2024-05-05_22-56-01.jpg",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2024-05-05_22-56-01.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "67095"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LBZ5Yc+uxXXrE55KwL/0sTDPdGmj4AUVVdVfNkWfVrQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 17:57:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LBZ5Yc+uxXXrE55KwL/0sTDPdGmj4AUVVdVfNkWfVrQ="
+        }
+      ]
+    },
+    {
+      "Route": "users_materials/headshots/photo_2024-05-05_22-56-01.w9bnpuuia2.jpg",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2024-05-05_22-56-01.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "67095"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LBZ5Yc+uxXXrE55KwL/0sTDPdGmj4AUVVdVfNkWfVrQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 17:57:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w9bnpuuia2"
+        },
+        {
+          "Name": "label",
+          "Value": "users_materials/headshots/photo_2024-05-05_22-56-01.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LBZ5Yc+uxXXrE55KwL/0sTDPdGmj4AUVVdVfNkWfVrQ="
+        }
+      ]
+    },
+    {
+      "Route": "users_materials/headshots/photo_2024-12-22_22-43-39.jpg",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2024-12-22_22-43-39.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "188429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kBmz7Gi0iDAilWzXEMqs37SmtcESzZn9oW1as9Ai/54=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 17:37:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kBmz7Gi0iDAilWzXEMqs37SmtcESzZn9oW1as9Ai/54="
+        }
+      ]
+    },
+    {
+      "Route": "users_materials/headshots/photo_2024-12-22_22-43-39.o6uzyxhc8s.jpg",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2024-12-22_22-43-39.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "188429"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kBmz7Gi0iDAilWzXEMqs37SmtcESzZn9oW1as9Ai/54=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 17:37:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o6uzyxhc8s"
+        },
+        {
+          "Name": "label",
+          "Value": "users_materials/headshots/photo_2024-12-22_22-43-39.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kBmz7Gi0iDAilWzXEMqs37SmtcESzZn9oW1as9Ai/54="
+        }
+      ]
+    },
+    {
+      "Route": "users_materials/headshots/photo_2025-06-27_23-51-38.jpg",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2025-06-27_23-51-38.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "89862"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eDTuL9Bg0PXDYQ88dHZ7iwsBqCXJXMYSSyOkz7eS/CY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 17:26:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eDTuL9Bg0PXDYQ88dHZ7iwsBqCXJXMYSSyOkz7eS/CY="
+        }
+      ]
+    },
+    {
+      "Route": "users_materials/headshots/photo_2025-06-27_23-51-38.w26ffgd2s4.jpg",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\photo_2025-06-27_23-51-38.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "89862"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eDTuL9Bg0PXDYQ88dHZ7iwsBqCXJXMYSSyOkz7eS/CY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 17:26:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w26ffgd2s4"
+        },
+        {
+          "Name": "label",
+          "Value": "users_materials/headshots/photo_2025-06-27_23-51-38.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eDTuL9Bg0PXDYQ88dHZ7iwsBqCXJXMYSSyOkz7eS/CY="
+        }
+      ]
+    },
+    {
+      "Route": "users_materials/headshots/Screenshot2025-07-0.9ke3s98oie.png",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\Screenshot2025-07-0.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "122769"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eUz4QGDy97ZlEiQkKfqYeEe4SUoyrPUGzD5QO49MYw4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 17:44:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9ke3s98oie"
+        },
+        {
+          "Name": "label",
+          "Value": "users_materials/headshots/Screenshot2025-07-0.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eUz4QGDy97ZlEiQkKfqYeEe4SUoyrPUGzD5QO49MYw4="
+        }
+      ]
+    },
+    {
+      "Route": "users_materials/headshots/Screenshot2025-07-0.png",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\users_materials\\headshots\\Screenshot2025-07-0.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "122769"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eUz4QGDy97ZlEiQkKfqYeEe4SUoyrPUGzD5QO49MYw4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 17:44:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eUz4QGDy97ZlEiQkKfqYeEe4SUoyrPUGzD5QO49MYw4="
         }
       ]
     },
@@ -6317,7 +8538,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1092"
+          "Value": "5463"
         },
         {
           "Name": "Content-Type",
@@ -6325,11 +8546,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FduB8vb/SW2uUJDgLXIlh3TQRAo0OEPsyjrfOaAH9iI=\""
+          "Value": "\"BWkXJst/Z2MFJzh4M7vtId548ZJ9zRmNIhsdOzl9BcM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 27 May 2025 22:23:24 GMT"
+          "Value": "Sun, 06 Jul 2025 19:16:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6339,7 +8560,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-FduB8vb/SW2uUJDgLXIlh3TQRAo0OEPsyjrfOaAH9iI="
+          "Value": "sha256-BWkXJst/Z2MFJzh4M7vtId548ZJ9zRmNIhsdOzl9BcM="
+        }
+      ]
+    },
+    {
+      "Route": "web.x9ya1b3z92.html",
+      "AssetFile": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\web.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5463"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BWkXJst/Z2MFJzh4M7vtId548ZJ9zRmNIhsdOzl9BcM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Jul 2025 19:16:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x9ya1b3z92"
+        },
+        {
+          "Name": "label",
+          "Value": "web.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BWkXJst/Z2MFJzh4M7vtId548ZJ9zRmNIhsdOzl9BcM="
         }
       ]
     },

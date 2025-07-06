@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>81d3af5va9</Fingerprint>
-      <Integrity>RKXK2172RL3OVl5fAw+sWn7hnPJ8nheGL9RHZ0PIH6U=</Integrity>
+      <Fingerprint>rrwuzsa7i7</Fingerprint>
+      <Integrity>Z1RpfMkEu5M1hKZj598RCAEwlxZrb5GxqB1SXop5b6M=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
@@ -102,8 +102,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>8o2yadlkqa</Fingerprint>
-      <Integrity>CDB+rzIpRe4GrUIJ/cXt7yJaBRQCqHIyAyenyVDzU98=</Integrity>
+      <Fingerprint>yi08iirf4x</Fingerprint>
+      <Integrity>VgGZSRSrl6SfAwbGLM59GHcrAmVJNYf+uiYJFru9c8U=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\functions\auth\auth.js'))</OriginalItemSpec>
@@ -192,8 +192,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>l3ac7lcs9a</Fingerprint>
-      <Integrity>IVmg1PisLYMFyEf799qyJXOyAEQSyGuWyDX6rYDbiAQ=</Integrity>
+      <Fingerprint>barc70ukd8</Fingerprint>
+      <Integrity>3aM1kJOuL8OmqtK7TRw2PPjS11udS8L1LEjpvFdr5G8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\functions.js'))</OriginalItemSpec>
@@ -228,8 +228,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>zs8ciytpjy</Fingerprint>
-      <Integrity>k+HzQqh70XJIB2jyJ+HvrByy+OP6QLwDPTkUICQId54=</Integrity>
+      <Fingerprint>ee13jl1oim</Fingerprint>
+      <Integrity>Kl+IAnNXJWDllZ9JdaApZ5Z6xDymYwwy54z0VGiEkEI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</OriginalItemSpec>
@@ -1296,23 +1296,185 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\login.html'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\avatar1.png'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\photo_2015-07-12_00-00-27.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>websocket</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/websocket</BasePath>
-      <RelativePath>users_materials/headshots/avatar1.png</RelativePath>
+      <RelativePath>users_materials/headshots/photo_2015-07-12_00-00-27.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0iyb19rk3q</Fingerprint>
-      <Integrity>mGevI8azJpeVo9u1tHykeEUHQOvKNW/ZIhcZP7h8kvc=</Integrity>
+      <Fingerprint>rf2n6h3zez</Fingerprint>
+      <Integrity>6fmGTnVF/WHHh0vo8rso0OXBkDEw/7A4APgsWqIiRa8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\avatar1.png'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\photo_2015-07-12_00-00-27.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\photo_2019-09-14_17-47-16.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>websocket</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/websocket</BasePath>
+      <RelativePath>users_materials/headshots/photo_2019-09-14_17-47-16.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>xw6klvfzy2</Fingerprint>
+      <Integrity>/97+22pfl5f5V5A3YocK3MKt4ZEu3b+CCDTcFE9cVvo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\photo_2019-09-14_17-47-16.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\photo_2023-01-03_21-01-17.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>websocket</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/websocket</BasePath>
+      <RelativePath>users_materials/headshots/photo_2023-01-03_21-01-17.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0i7havgpae</Fingerprint>
+      <Integrity>OKYdjQiXBekzsHQ38T5JlNWOas+HnXGml+sVscIMSzI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\photo_2023-01-03_21-01-17.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\photo_2023-10-06_00-00-52.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>websocket</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/websocket</BasePath>
+      <RelativePath>users_materials/headshots/photo_2023-10-06_00-00-52.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>gztiofjezd</Fingerprint>
+      <Integrity>tDMPgfeeDk+BV+2LkUNedtlNNT53QSwBrbOPrLCp3Uo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\photo_2023-10-06_00-00-52.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\photo_2023-10-06_00-00-58.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>websocket</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/websocket</BasePath>
+      <RelativePath>users_materials/headshots/photo_2023-10-06_00-00-58.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ezibtmvnlo</Fingerprint>
+      <Integrity>2jl5ROMnKYh53d8bx68Yju5WG8CyftZ6sTU67UTyHVA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\photo_2023-10-06_00-00-58.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\photo_2023-11-12_08-11-32.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>websocket</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/websocket</BasePath>
+      <RelativePath>users_materials/headshots/photo_2023-11-12_08-11-32.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ccn8jzx48t</Fingerprint>
+      <Integrity>1Gh4jMEmfxaelAoC6fFy8gDptQBQyayphLc15AWKeps=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\photo_2023-11-12_08-11-32.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\photo_2024-05-05_22-56-01.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>websocket</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/websocket</BasePath>
+      <RelativePath>users_materials/headshots/photo_2024-05-05_22-56-01.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>w9bnpuuia2</Fingerprint>
+      <Integrity>LBZ5Yc+uxXXrE55KwL/0sTDPdGmj4AUVVdVfNkWfVrQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\photo_2024-05-05_22-56-01.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\photo_2024-12-22_22-43-39.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>websocket</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/websocket</BasePath>
+      <RelativePath>users_materials/headshots/photo_2024-12-22_22-43-39.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>o6uzyxhc8s</Fingerprint>
+      <Integrity>kBmz7Gi0iDAilWzXEMqs37SmtcESzZn9oW1as9Ai/54=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\photo_2024-12-22_22-43-39.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\photo_2025-06-27_23-51-38.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>websocket</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/websocket</BasePath>
+      <RelativePath>users_materials/headshots/photo_2025-06-27_23-51-38.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>w26ffgd2s4</Fingerprint>
+      <Integrity>eDTuL9Bg0PXDYQ88dHZ7iwsBqCXJXMYSSyOkz7eS/CY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\photo_2025-06-27_23-51-38.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\Screenshot2025-07-0.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>websocket</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/websocket</BasePath>
+      <RelativePath>users_materials/headshots/Screenshot2025-07-0.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>9ke3s98oie</Fingerprint>
+      <Integrity>eUz4QGDy97ZlEiQkKfqYeEe4SUoyrPUGzD5QO49MYw4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\users_materials\headshots\Screenshot2025-07-0.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web.html'))">
       <SourceType>Package</SourceType>
@@ -1326,8 +1488,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>b8o8z1hnto</Fingerprint>
-      <Integrity>q6P2XM37nl9n9E9punTcofS/OZzSudO9nrUf4s6tXJY=</Integrity>
+      <Fingerprint>x9ya1b3z92</Fingerprint>
+      <Integrity>BWkXJst/Z2MFJzh4M7vtId548ZJ9zRmNIhsdOzl9BcM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web.html'))</OriginalItemSpec>

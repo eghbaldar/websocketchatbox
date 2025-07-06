@@ -24,6 +24,8 @@ function connect() {
                 currentUsername = parts[1].trim();
                 currentFullname = parts[2].trim();
                 currentHeadshot = parts[3].trim();
+
+                $("#meHeadshot").prop("src", `/users_materials/headshots/${currentHeadshot}`);
                 $("#whoami").html(`<b>${currentFullname}</b><br/><small>@${currentUsername}</small>`);
             }
 
@@ -50,14 +52,18 @@ function connect() {
 
         // ✅ 2. Typing event (must come before general 'authenticated' check)
         else if (data.includes("typing")) {
+
             try {
                 const jsonPart = data.split(/:(.+)/)[1].trim();
+                const username = data.split(/:(.+)/)[0].trim();
                 const typingData = JSON.parse(jsonPart);
 
                 if (!typingData.status) {
                     typing("");
+                    document.title = `Benal Messanger!`;
                 } else {
-                    typing("user is typing...");
+                    typing(`<b style='color:red;'>@${username}</b> is typing...`);
+                    document.title = `${username} is typing...`;
                 }
             } catch (err) {
                 console.error("Invalid typing format", err);
@@ -165,7 +171,7 @@ function loadFriends(username) {
                 // 🔁 Replace hardcoded name/text with dynamic content
                 const box = document.createElement("div");
                 box.innerHTML = `
-                    <a class="list-group-item media" style="text-decoration: none;">
+                    <a class="list-group-item media" style="text-decoration: none;cursor:pointer;">
                         <div class="pull-left">
                             <img src="/users_materials/headshots/${friend.friendHeadshot}" alt="" class="img-avatar">
                         </div>
@@ -378,11 +384,13 @@ async function addFriend() {
         }
     });
 }
+function logOut() {
+    window.location.href = "/auth/logout"; // calls the logout endpoint and redirects
+}
 //// Run on load
 function handleLoadLayout() {
     $("#selectedFriendNameContext").attr("class", "friendbox");
     $("#selectedFriendName").html(`<h4>Benal Messanger!</h4>`);
-    $("#meHeadshot").prop("src",`/users_materials/headshots/${currentHeadshot}`);
 }
 window.addEventListener('load', handleLoadLayout);
 //// End Run on load

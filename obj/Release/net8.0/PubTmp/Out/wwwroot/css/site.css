@@ -1,22 +1,382 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  margin-bottom: 60px;
+    font-family: Roboto,sans-serif;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #767676;
+    background-color: #edecec;
+}
+#messages-main {
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+    #messages-main:after, #messages-main:before {
+        content: " ";
+        display: table;
+    }
+
+    #messages-main .ms-menu {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-right: 1px solid #eee;
+        padding-bottom: 50px;
+        height: 100%;
+        width: 240px;
+        background: #fff;
+    }
+
+@media (min-width:768px) {
+    #messages-main .ms-body {
+        padding-left: 240px;
+    }
+}
+
+
+@media (max-width:767px) {
+    #messages-main .ms-menu {
+        height: calc(100% - 58px);
+        display: none;
+        z-index: 1;
+        top: 58px;
+    }
+
+        #messages-main .ms-menu.toggled {
+            display: block;
+        }
+
+    #messages-main .ms-body {
+        overflow: hidden;
+    }
+}
+
+#messages-main .ms-user {
+    padding: 15px;
+    background: #f8f8f8;
+}
+
+    #messages-main .ms-user > div {
+        overflow: hidden;
+        padding: 3px 5px 0 15px;
+        font-size: 11px;
+    }
+
+#messages-main #ms-compose {
+    position: fixed;
+    bottom: 120px;
+    z-index: 1;
+    right: 30px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+}
+
+.fc-toolbar:before, .login-content:after {
+    content: ""
+}
+
+.message-feed {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#footer, .fc-toolbar .ui-button, .fileinput .thumbnail, .four-zero, .four-zero footer > a, .ie-warning, .login-content, .login-navigation, .pt-inner, .pt-inner .pti-footer > a {
+    text-align: center;
+}
+
+.message-feed.right > .pull-right {
+    margin-left: 15px;
+}
+
+.message-feed:not(.right) .mf-content {
+    background: #F8C9B5;
+    color: #000;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.message-feed.right .mf-content {
+    background: #eee;
+}
+
+.mf-content {
+    padding: 12px 17px 13px;
+    border-radius: 2px;
+    display: inline-block;
+    max-width: 80%;
+    font-family:Tahoma;
+}
+#chatMessage {
+    font-family: Tahoma;
+}
+.mf-date {
+    display: block;
+    color: #B3B3B3;
+    margin-top: 7px;
+}
+
+    .mf-date > i {
+        font-size: 14px;
+        line-height: 100%;
+        position: relative;
+        top: 1px;
+    }
+
+.msb-reply {
+    box-shadow: 0 -20px 20px -5px #fff;
+    position: relative;
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    background: #f8f8f8;
+}
+
+.four-zero, .lc-block {
+    box-shadow: 0 1px 11px rgba(0, 0, 0, .27);
+}
+
+.msb-reply textarea {
+    width: 100%;
+    font-size: 13px;
+    border: 0;
+    padding: 10px 15px;
+    resize: none;
+    height: 60px;
+    background: 0 0;
+}
+
+.msb-reply button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    height: 100%;
+    width: 60px;
+    font-size: 25px;
+    color: #2196f3;
+    background: 0 0;
+}
+
+    .msb-reply button:hover {
+        background: #f2f2f2;
+    }
+
+.img-avatar {
+    height: 37px;
+    border-radius: 2px;
+    width: 37px;
+    object-fit: cover;
+    border-radius:50%;
+    border:2px solid red;
+}
+
+.list-group.lg-alt .list-group-item {
+    border: 0;
+}
+
+.p-15 {
+    padding: 15px !important;
+}
+
+.btn:not(.btn-alt) {
+    border: 0;
+}
+
+.action-header {
+    position: relative;
+    background: #f8f8f8;
+    padding: 15px 13px 15px 17px;
+    border-bottom:1px solid #ccc;
+}
+
+.ah-actions {
+    z-index: 3;
+    float: left;
+    margin-top: 7px;
+    position: relative;
+}
+.ah-actions-menu {
+    z-index: 3;
+    float: right;
+    margin-top: 7px;
+    position: relative;
+}
+
+.actions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#backToFriends{
+    display:none;
+}
+@media screen and (width <= 400px) {
+    #backToFriends {
+        display: inline;
+    }
+}
+
+    .actions > li {
+        display: inline-block;
+    }
+
+    .actions:not(.a-alt) > li > a > i {
+        color: #939393;
+    }
+
+    .actions > li > a > i {
+        font-size: 20px;
+    }
+
+    .actions > li > a {
+        display: block;
+        padding: 0 10px;
+    }
+
+.ms-body {
+    background: #fff;
+}
+#ms-menu-trigger{
+    cursor:pointer;
+    display:none;
+}
+
+.friendbox {
+    display: flex !important;
+}
+
+#selectedFriendName {
+    padding-left: 15px;
+}
+
+#messages-main {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.ms-menu {
+    width: 250px;
+    overflow-y: auto;
+    border-right: 1px solid #ccc;
+}
+
+.ms-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#chatWindow {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.msb-reply {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#chatMessage {
+    width: 100%;
+    min-height: 60px;
+    resize: none;
+}
+.ms-menu {
+    box-shadow: 31px 31px 38px -16px rgba(0,0,0,0.62);
+    -webkit-box-shadow: 31px 31px 38px -16px rgba(0,0,0,0.62);
+    -moz-box-shadow: 31px 31px 38px -16px rgba(0,0,0,0.62);
+}
+.message-feed.right {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+    .message-feed.right .media-body {
+        text-align: right;
+    }
+@media screen and (width <= 1000px) {
+    #ms-menu-trigger {
+        display: inline;
+    }
+}
+.btnAddFriend {
+    border-radius: 0;
+    background-color: #C41240 !important;
+}
+.swal2-title {
+    font-size: 14px !important;
+}
+button.swal2-confirm {
+    font-size: 14px !important;
+    background-color: red !important;
+}
+.container {
+    width:100%;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width:100%;
+}
+
+    /* Dropdown button on hover & focus */
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+    }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 1000px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+*:focus {
+    outline: none;
 }

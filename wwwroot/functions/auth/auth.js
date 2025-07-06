@@ -67,7 +67,7 @@ function login() {
             else alert("Something went worng buddy!");
         },
         error: function (e) {
-            alert(e);
+            alert("Something went worng buddy!");
         }
     });
 }

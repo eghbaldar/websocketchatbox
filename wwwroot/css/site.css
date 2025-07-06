@@ -75,7 +75,10 @@ body {
 }
 
 .message-feed {
-    padding: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #footer, .fc-toolbar .ui-button, .fileinput .thumbnail, .four-zero, .four-zero footer > a, .ie-warning, .login-content, .login-navigation, .pt-inner, .pt-inner .pti-footer > a {
@@ -100,9 +103,12 @@ body {
     padding: 12px 17px 13px;
     border-radius: 2px;
     display: inline-block;
-    max-width: 80%
+    max-width: 80%;
+    font-family:Tahoma;
 }
-
+#chatMessage {
+    font-family: Tahoma;
+}
 .mf-date {
     display: block;
     color: #B3B3B3;

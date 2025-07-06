@@ -1,42 +1,117 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<html>
 <head>
-    <title>WebSocket Chat</title>
+    <title>Benal Messanger!</title>
+    <link rel="shortcut icon" href="/imgs/logo.png" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
 </head>
 <body>
-    <H1>NOTE</H1>
-    <p>"Your first message will be considered as your username."</p>
-    <p>So, after the first one, continue messaging ...</p>
-    <hr/>
-    <input type="text" id="msg" placeholder="Type a message..." />
-    <button onclick="sendMessage()">Send</button>
-    <hr/>
-    www.eghbaldar.ir
-    <br/>
-    www.kingeto.ir
-    <pre id="log"></pre>
+    <div class="container bootstrap snippets bootdey">
+        <div class="tile tile-alt" id="messages-main">
+            <div class="ms-menu">
+                <div class="ms-user clearfix">
+                    <img id="meHeadshot" alt="" class="img-avatar pull-left">
+                    <div id="whoami"></div>
+                </div>
+                <div class="p-15">
+                    <div class="dropdown">
+                        <ul class="dropdown-menu dm-icon w-100">
+                            <li><a href=""><i class="fa fa-envelope"></i> Messages</a></li>
+                            <li><a href=""><i class="fa fa-users"></i> Contacts</a></li>
+                            <li><a href=""><i class="fa fa-format-list-bulleted"> </i>Todo Lists</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list-group lg-alt">
+                    <button onclick="myFunction()" class="dropbtn btn btn-primary btn-block btnAddFriend">Settings</button>
+                    <div class="dropdown">
+                        <div id="myDropdown" class="dropdown-content">
+                            <a onclick="addFriend()">Add Friend</a>
+                            <a onclick="logOut()">Logout</a>
+                        </div>
+                    </div>
 
-    <script>
-        const socket = new WebSocket((location.protocol === "https:" ? "wss" : "ws") + "://" + location.host + "/ws");
+                    <div id="friendListContainer">
+                    </div>
+                </div>
+            </div>
 
-    socket.onopen = () => {
-      console.log("Connected to server");
-      log("✅ Connected");
-    };
+            <div class="ms-body">
+                <div class="action-header clearfix">
+                    <ul class="ah-actions actions">
+                        <li>
+                            <div class="pull-left hidden-xs" id="selectedFriendNameContext" hidden>
+                                <img src="/imgs/logo.png" alt="" class="img-avatar m-r-10">
+                                <div class="lv-avatar pull-left">
+                                </div>
+                                <div id="selectedFriendName"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="ah-actions-menu actions">
+                        <!--<li>
+                            <a href="">
+                                <i class="fa fa-trash"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-check"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-clock-o"></i>
+                            </a>
+                        </li>-->
+                        <!--<li class="dropdown">
+                            <a href="" data-toggle="dropdown" aria-expanded="true">
+                                <i class="fa fa-sort"></i>
+                            </a>
 
-    socket.onmessage = (event) => {
-      log("📨 " + event.data);
-    };
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li>
+                                    <a href="">Latest</a>
+                                </li>
+                                <li>
+                                    <a href="">Oldest</a>
+                                </li>
+                            </ul>
+                        </li>-->
+                        <li class="dropdown">
+                            <a id="ms-menu-trigger">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-list" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-    function sendMessage() {
-      const msg = document.getElementById("msg").value;
-        socket.send(msg);
-        document.getElementById("msg").value = "";
-    }
 
-    function log(msg) {
-      document.getElementById("log").textContent += msg + "\n";
-    }
-    </script>
+                <div class="chat-container">
+                    <div id="chatWindow"></div>
+                    <div class="msb-reply">
+                        <div id="div_typing"></div>
+                        <textarea id="chatMessage" placeholder="What's on your mind..."></textarea>
+                        <button onclick="sendMessage()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                             fill="red" class="bi bi-send" viewBox="0 0 16 16">
+    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z" />
+</svg></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/functions.js"></script>
+    <!-- Template JS -->
+    <script src="js/sweetalert2@11.js"></script>
+    <script src="js/cache-1635427806-97135bbb13d92c11d6b2a92f6a36685a.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/site.js"></script>
 </body>
 </html>
+
