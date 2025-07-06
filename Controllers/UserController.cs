@@ -36,5 +36,15 @@ namespace websocket.Controllers
             MessageService message = new MessageService(_context);
             return Json(message.GetMessagesByFriendUsername(currentUsername, friendUsername));
         }
+        [HttpPost]
+        public IActionResult PostFriend(
+            string currentUsername,
+            string friendUsername)
+        {
+            FriendshipService friendshipService = new FriendshipService(_context);
+            if (friendshipService.AddFriend(currentUsername, friendUsername))
+                return Json(new { IsSuccess = true });
+            else return Json(new { IsSuccess = false });
+        }
     }
 }

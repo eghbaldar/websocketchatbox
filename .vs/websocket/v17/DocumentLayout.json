@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EC022BAC-999F-4D1A-A5F9-72526E921ED0}|websocket.csproj|d:\\_kingeto\\tutorials\\security\\paid-course\\s9 - socket [attack 2]\\1- what is it\\2 project\\websocket\\wwwroot\\web.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EC022BAC-999F-4D1A-A5F9-72526E921ED0}|websocket.csproj|solutionrelative:wwwroot\\web.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EC022BAC-999F-4D1A-A5F9-72526E921ED0}|websocket.csproj|d:\\_kingeto\\tutorials\\security\\paid-course\\s9 - socket [attack 2]\\1- what is it\\2 project\\websocket\\wwwroot\\js\\functions.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EC022BAC-999F-4D1A-A5F9-72526E921ED0}|websocket.csproj|solutionrelative:wwwroot\\js\\functions.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC022BAC-999F-4D1A-A5F9-72526E921ED0}|websocket.csproj|d:\\_kingeto\\tutorials\\security\\paid-course\\s9 - socket [attack 2]\\1- what is it\\2 project\\websocket\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{EC022BAC-999F-4D1A-A5F9-72526E921ED0}|websocket.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{EC022BAC-999F-4D1A-A5F9-72526E921ED0}|websocket.csproj|d:\\_kingeto\\tutorials\\security\\paid-course\\s9 - socket [attack 2]\\1- what is it\\2 project\\websocket\\wwwroot\\web.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EC022BAC-999F-4D1A-A5F9-72526E921ED0}|websocket.csproj|solutionrelative:wwwroot\\web.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EC022BAC-999F-4D1A-A5F9-72526E921ED0}|websocket.csproj|d:\\_kingeto\\tutorials\\security\\paid-course\\s9 - socket [attack 2]\\1- what is it\\2 project\\websocket\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{EC022BAC-999F-4D1A-A5F9-72526E921ED0}|websocket.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC022BAC-999F-4D1A-A5F9-72526E921ED0}|websocket.csproj|d:\\_kingeto\\tutorials\\security\\paid-course\\s9 - socket [attack 2]\\1- what is it\\2 project\\websocket\\helpers\\conductor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC022BAC-999F-4D1A-A5F9-72526E921ED0}|websocket.csproj|solutionrelative:helpers\\conductor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC022BAC-999F-4D1A-A5F9-72526E921ED0}|websocket.csproj|d:\\_kingeto\\tutorials\\security\\paid-course\\s9 - socket [attack 2]\\1- what is it\\2 project\\websocket\\services\\messages\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EC022BAC-999F-4D1A-A5F9-72526E921ED0}|websocket.csproj|d:\\_kingeto\\tutorials\\security\\paid-course\\s9 - socket [attack 2]\\1- what is it\\2 project\\websocket\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC022BAC-999F-4D1A-A5F9-72526E921ED0}|websocket.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC022BAC-999F-4D1A-A5F9-72526E921ED0}|websocket.csproj|d:\\_kingeto\\tutorials\\security\\paid-course\\s9 - socket [attack 2]\\1- what is it\\2 project\\websocket\\services\\users\\friendship\\friendshipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC022BAC-999F-4D1A-A5F9-72526E921ED0}|websocket.csproj|solutionrelative:services\\users\\friendship\\friendshipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC022BAC-999F-4D1A-A5F9-72526E921ED0}|websocket.csproj|d:\\_kingeto\\tutorials\\security\\paid-course\\s9 - socket [attack 2]\\1- what is it\\2 project\\websocket\\helpers\\conductor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC022BAC-999F-4D1A-A5F9-72526E921ED0}|websocket.csproj|solutionrelative:helpers\\conductor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,19 +38,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "site.js",
               "DocumentMoniker": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
               "ToolTip": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\site.js",
               "RelativeToolTip": "wwwroot\\js\\site.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-04T18:18:53.392Z",
+              "WhenOpened": "2025-07-06T18:48:42.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "functions.js",
+              "DocumentMoniker": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\functions.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\functions.js",
+              "ToolTip": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\js\\functions.js",
+              "RelativeToolTip": "wwwroot\\js\\functions.js",
+              "ViewState": "AgIAAO8AAAAAAAAAAAAAAA4BAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-06T17:16:17.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MessageService.cs",
+              "DocumentMoniker": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\Services\\Messages\\MessageService.cs",
+              "RelativeDocumentMoniker": "Services\\Messages\\MessageService.cs",
+              "ToolTip": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\Services\\Messages\\MessageService.cs",
+              "RelativeToolTip": "Services\\Messages\\MessageService.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAtwE4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T18:14:29.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAhwCQAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T18:04:17.934Z",
               "EditorCaption": ""
             },
             {
@@ -61,72 +100,35 @@
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
               "ToolTip": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\css\\site.css",
               "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAABYBAAAAAAAAAAAAACwBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAMwLUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-07-04T17:14:19.563Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MessageService.cs",
-              "DocumentMoniker": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\Services\\Messages\\MessageService.cs",
-              "RelativeDocumentMoniker": "Services\\Messages\\MessageService.cs",
-              "ToolTip": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\Services\\Messages\\MessageService.cs",
-              "RelativeToolTip": "Services\\Messages\\MessageService.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAE0AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T16:50:19.633Z",
+              "WhenOpened": "2025-07-06T17:48:40.852Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAYwCEAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T20:56:55.175Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FriendshipService.cs",
-              "DocumentMoniker": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\Services\\Users\\Friendship\\FriendshipService.cs",
-              "RelativeDocumentMoniker": "Services\\Users\\Friendship\\FriendshipService.cs",
-              "ToolTip": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\Services\\Users\\Friendship\\FriendshipService.cs",
-              "RelativeToolTip": "Services\\Users\\Friendship\\FriendshipService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAIA6wB8AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T20:57:55.306Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Conductor.cs",
               "DocumentMoniker": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\Helpers\\Conductor.cs",
               "RelativeDocumentMoniker": "Helpers\\Conductor.cs",
               "ToolTip": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\Helpers\\Conductor.cs",
               "RelativeToolTip": "Helpers\\Conductor.cs",
-              "ViewState": "AgIAAKoAAAAAAAAAAAArwLkAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAAAHwAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T19:55:52.672Z"
+              "WhenOpened": "2025-07-06T17:45:35.077Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "web.html",
               "DocumentMoniker": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\web.html",
               "RelativeDocumentMoniker": "wwwroot\\web.html",
               "ToolTip": "D:\\_Kingeto\\Tutorials\\Security\\Paid-course\\S9 - Socket [Attack 2]\\1- What is it\\2 Project\\websocket\\wwwroot\\web.html",
               "RelativeToolTip": "wwwroot\\web.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQBAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAMwFMAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-07-02T19:55:33.827Z",
+              "WhenOpened": "2025-07-06T17:10:43.597Z",
               "EditorCaption": ""
             }
           ]

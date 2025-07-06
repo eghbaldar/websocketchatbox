@@ -87,8 +87,8 @@ body {
 }
 
 .message-feed:not(.right) .mf-content {
-    background: #03a9f4;
-    color: #fff;
+    background: #F8C9B5;
+    color: #000;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -158,6 +158,9 @@ body {
     height: 37px;
     border-radius: 2px;
     width: 37px;
+    object-fit: cover;
+    border-radius:50%;
+    border:2px solid red;
 }
 
 .list-group.lg-alt .list-group-item {
@@ -176,6 +179,7 @@ body {
     position: relative;
     background: #f8f8f8;
     padding: 15px 13px 15px 17px;
+    border-bottom:1px solid #ccc;
 }
 
 .ah-actions {
@@ -227,6 +231,7 @@ body {
 }
 #ms-menu-trigger{
     cursor:pointer;
+    display:none;
 }
 
 .friendbox {
@@ -298,3 +303,74 @@ body {
     .message-feed.right .media-body {
         text-align: right;
     }
+@media screen and (width <= 1000px) {
+    #ms-menu-trigger {
+        display: inline;
+    }
+}
+.btnAddFriend {
+    border-radius: 0;
+    background-color: #C41240 !important;
+}
+.swal2-title {
+    font-size: 14px !important;
+}
+button.swal2-confirm {
+    font-size: 14px !important;
+    background-color: red !important;
+}
+.container {
+    width:100%;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width:100%;
+}
+
+    /* Dropdown button on hover & focus */
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+    }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 1000px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+*:focus {
+    outline: none;
+}

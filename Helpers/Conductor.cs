@@ -27,6 +27,7 @@ namespace websocket.Helpers
                     var buffer = new byte[4096];
                     string? username = null;
                     string? fullname = null;
+                    string? headshot = null;
 
                     try
                     {
@@ -43,6 +44,7 @@ namespace websocket.Helpers
                             var _user = _dbContext.Users.Where(x => x.Id == user.UserId).First();
                             username = _user.Username;
                             fullname = _user.Fullname;
+                            headshot = _user.Headshot;
                         }
                         else
                         {
@@ -68,13 +70,14 @@ namespace websocket.Helpers
                         }
 
                         // ✅ Success
-                        await socket.SendAsync(Encoding.UTF8.GetBytes($"Authenticated:{username}:{fullname}"), WebSocketMessageType.Text, true, CancellationToken.None);
+                        await socket.SendAsync(Encoding.UTF8.GetBytes($"Authenticated:{username}:{fullname}:{headshot}"), WebSocketMessageType.Text, true, CancellationToken.None);
 
                         //GeneralStatics.ThisUsername = username;
                         WebSocketHandler.Clients.Add(new ClientInfo
                         {
                             Socket = socket,
-                            Username = username
+                            Username = username,
+                            Headshot = headshot
                         });
 
                         // 💬 Start chat loop
@@ -119,7 +122,11 @@ namespace websocket.Helpers
                                     var recipient = root.GetProperty("to").GetString();
                                     var message = root.GetProperty("message").GetString();
 
-                                    var fullMessage = $"{username}: {message}";
+                                    var sender = WebSocketHandler.Clients.FirstOrDefault(c => c.Socket == socket);
+                                    var _headshot = sender?.Headshot ?? "default.png";
+
+
+                                    var fullMessage = $"{username}: {message}:{_headshot}";
                                     var messageBytes = Encoding.UTF8.GetBytes(fullMessage);
 
                                     var friendshipService = new FriendshipService(_dbContext);
@@ -211,5 +218,6 @@ namespace websocket.Helpers
     {
         public WebSocket Socket { get; set; }
         public string Username { get; set; }
+        public string Headshot { get; set; }
     }
 }

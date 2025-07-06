@@ -30,6 +30,7 @@ namespace websocket.Services.Users.Friendship
             public Guid FriendId { get; set; }
             public string FriendUsername { get; set; }
             public string FriendName { get; set; }
+            public string? FriendHeadshot { get; set; }
         }
         public class ResultFriendsDto
         {
@@ -58,7 +59,8 @@ namespace websocket.Services.Users.Friendship
                 {
                     FriendId = u.Id,
                     FriendName = u.Fullname,
-                    FriendUsername = u.Username
+                    FriendUsername = u.Username,
+                    FriendHeadshot = u.Headshot,
                 })
                 .ToList();
 
@@ -67,6 +69,34 @@ namespace websocket.Services.Users.Friendship
                 IsSuccess = true,
                 Result = friends,
             };
+        }
+        //////////////////////////////////////////
+        //// Add a Friend
+        //////////////////////////////////////////
+        public bool AddFriend(string currentUsername, string friendUsername)
+        {
+            if (AreFriends(currentUsername, friendUsername)) return false;
+            var user = _context.Users.FirstOrDefault(x => x.Username == currentUsername);
+            var friend = _context.Users.FirstOrDefault(x => x.Username == friendUsername);
+            if (user == null) return false;
+            if (friend == null) return false;
+
+            Friends friends = new Friends()
+            {
+                User1 = user.Id,
+                User2 = friend.Id,
+            };
+            _context.Friends.Add(friends);
+            try
+            {
+                _context.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
         }
     }
 }

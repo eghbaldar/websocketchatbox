@@ -1,9 +1,17 @@
+wwwroot\css\bootstrap.min.css
+wwwroot\css\font-awesome.min.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\functions\auth\auth.css
 wwwroot\functions\auth\auth.js
+wwwroot\imgs\illustration.png
+wwwroot\imgs\logo.png
 wwwroot\imgs\noTrespassing.jpg
+wwwroot\js\cache-1635427806-97135bbb13d92c11d6b2a92f6a36685a.js
+wwwroot\js\functions.js
+wwwroot\js\popper.min.js
 wwwroot\js\site.js
+wwwroot\js\sweetalert2@11.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
@@ -62,4 +70,5 @@ wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 wwwroot\login.html
+wwwroot\users_materials\headshots\avatar1.png
 wwwroot\web.html

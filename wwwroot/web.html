@@ -1,390 +1,117 @@
-﻿<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="css/site.css" rel="stylesheet" />
+﻿<html>
+<head>
+    <title>Benal Messanger!</title>
+    <link rel="shortcut icon" href="/imgs/logo.png" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container bootstrap snippets bootdey">
+        <div class="tile tile-alt" id="messages-main">
+            <div class="ms-menu">
+                <div class="ms-user clearfix">
+                    <img id="meHeadshot" alt="" class="img-avatar pull-left">
+                    <div id="whoami"></div>
+                </div>
+                <div class="p-15">
+                    <div class="dropdown">
+                        <ul class="dropdown-menu dm-icon w-100">
+                            <li><a href=""><i class="fa fa-envelope"></i> Messages</a></li>
+                            <li><a href=""><i class="fa fa-users"></i> Contacts</a></li>
+                            <li><a href=""><i class="fa fa-format-list-bulleted"> </i>Todo Lists</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list-group lg-alt">
+                    <button onclick="myFunction()" class="dropbtn btn btn-primary btn-block btnAddFriend">Settings</button>
+                    <div class="dropdown">
+                        <div id="myDropdown" class="dropdown-content">
+                            <a onclick="addFriend()">Add Friend</a>
+                            <a href="#">Logout</a>
+                        </div>
+                    </div>
 
-
-<div class="container bootstrap snippets bootdey">
-    <div class="tile tile-alt" id="messages-main">
-        <div class="ms-menu">
-            <div class="ms-user clearfix">
-                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="img-avatar pull-left">
-                <div id="whoami"></div>
+                    <div id="friendListContainer">
+                    </div>
+                </div>
             </div>
-            <div class="p-15">
-                <div class="dropdown">
-                    <!--<a class="btn btn-primary btn-block" href="" data-toggle="dropdown">Messages <i class="caret m-l-5"></i></a>-->
-                    <ul class="dropdown-menu dm-icon w-100">
-                        <li><a href=""><i class="fa fa-envelope"></i> Messages</a></li>
-                        <li><a href=""><i class="fa fa-users"></i> Contacts</a></li>
-                        <li><a href=""><i class="fa fa-format-list-bulleted"> </i>Todo Lists</a></li>
+
+            <div class="ms-body">
+                <div class="action-header clearfix">
+                    <ul class="ah-actions actions">
+                        <li>
+                            <div class="pull-left hidden-xs" id="selectedFriendNameContext" hidden>
+                                <img src="/imgs/logo.png" alt="" class="img-avatar m-r-10">
+                                <div class="lv-avatar pull-left">
+                                </div>
+                                <div id="selectedFriendName"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="ah-actions-menu actions">
+                        <!--<li>
+                            <a href="">
+                                <i class="fa fa-trash"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-check"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-clock-o"></i>
+                            </a>
+                        </li>-->
+                        <!--<li class="dropdown">
+                            <a href="" data-toggle="dropdown" aria-expanded="true">
+                                <i class="fa fa-sort"></i>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li>
+                                    <a href="">Latest</a>
+                                </li>
+                                <li>
+                                    <a href="">Oldest</a>
+                                </li>
+                            </ul>
+                        </li>-->
+                        <li class="dropdown">
+                            <a id="ms-menu-trigger">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black" class="bi bi-list" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
                 </div>
-            </div>
-            <div class="list-group lg-alt">
-                <!-- friend list -->
-                <div id="friendListContainer">
-                    <!-- Friends will be inserted here -->
+
+
+                <div class="chat-container">
+                    <div id="chatWindow"></div>
+                    <div class="msb-reply">
+                        <div id="div_typing"></div>
+                        <textarea id="chatMessage" placeholder="What's on your mind..."></textarea>
+                        <button onclick="sendMessage()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                             fill="red" class="bi bi-send" viewBox="0 0 16 16">
+    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z" />
+</svg></button>
+                    </div>
                 </div>
             </div>
+
         </div>
-
-        <div class="ms-body">
-            <div class="action-header clearfix">
-                <ul class="ah-actions actions">
-                    <li>
-                        <div class="pull-left hidden-xs" id="selectedFriendNameContext" hidden>
-                            <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="img-avatar m-r-10">
-                            <div class="lv-avatar pull-left">
-                            </div>
-                            <div id="selectedFriendName"></div>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="ah-actions-menu actions">
-                    <!--<li>
-                        <a href="">
-                            <i class="fa fa-trash"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="fa fa-check"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="fa fa-clock-o"></i>
-                        </a>
-                    </li>-->
-                    <!--<li class="dropdown">
-                        <a href="" data-toggle="dropdown" aria-expanded="true">
-                            <i class="fa fa-sort"></i>
-                        </a>
-
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li>
-                                <a href="">Latest</a>
-                            </li>
-                            <li>
-                                <a href="">Oldest</a>
-                            </li>
-                        </ul>
-                    </li>-->
-                    <li class="dropdown">
-                        <a id="ms-menu-trigger">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-
-            <div class="chat-container">
-                <div id="chatWindow"></div>
-                <div class="msb-reply">
-                    <div id="div_typing"></div>
-                    <textarea id="chatMessage" placeholder="What's on your mind..."></textarea>
-                    <button onclick="sendMessage()"><i class="fa fa-paper-plane-o"></i></button>
-                </div>
-            </div>
-        </div>
-
     </div>
-</div>
+    <script src="js/functions.js"></script>
+    <!-- Template JS -->
+    <script src="js/sweetalert2@11.js"></script>
+    <script src="js/cache-1635427806-97135bbb13d92c11d6b2a92f6a36685a.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>
 
-
-<script>
-    let socket;
-    let authenticated = false;
-    let currentFullname = "";
-
-    window.addEventListener("DOMContentLoaded", () => {
-        connect(); // Automatically try connecting once page loads
-    });
-
-    function connect() {
-        socket = new WebSocket((location.protocol === "https:" ? "wss" : "ws") + "://" + location.host + "/ws");
-
-        socket.onopen = () => {
-            // Nothing to send — we expect the server to authenticate using cookie
-        };
-
-        socket.onmessage = (event) => {
-            const data = event.data;
-
-            // ✅ 1. Authenticated
-            if (data.startsWith("Authenticated")) {
-
-                const parts = data.split(":");
-                if (parts.length >= 3) {
-                    currentUsername = parts[1].trim();
-                    currentFullname = parts[2].trim();
-                    $("#whoami").html(`<b>${currentFullname}</b><br/><small>@${currentUsername}</small>`);
-                }
-
-
-                Swal.fire("✅ Authentication succeeded!");
-
-                authenticated = true;
-
-                loadFriends(currentUsername);
-            }
-
-            // ✅ 2. Typing event (must come before general 'authenticated' check)
-            else if (data.includes("typing")) {
-                try {
-                    const jsonPart = data.split(/:(.+)/)[1].trim();
-                    const typingData = JSON.parse(jsonPart);
-
-                    if (!typingData.status) {
-                        typing("");
-                    } else {
-                        typing("user is typing...");
-                    }
-                } catch (err) {
-                    console.error("Invalid typing format", err);
-                }
-            }
-
-            // ❌ 3. Authentication failure
-            else if (data.includes("Authentication failed") || data.includes("Invalid")) {
-                alert("❌ Authentication failed. Try again.");
-                socket.close();
-            }
-
-            // ✅ 4. Any other messages
-            else if (authenticated) {
-                const parts = data.split(":");
-                const sender = parts[0].trim();
-                const message = parts.slice(1).join(":").trim();
-
-                const target = sender === currentUsername ? selectedFriend : sender;
-
-                addMessageToStore(target, `${sender}: ${message}`);
-
-                if (selectedFriend === target) {
-                    renderChat(target);
-                }
-            }
-        };
-
-        socket.onclose = () => {
-            Swal.fire("🔌 Disconnected.");
-        };
-
-        socket.onerror = () => {
-            Swal.fire("⚠️ WebSocket error");
-        };
-    }
-
-    function sendMessage() {
-        if (!authenticated || !selectedFriend) {
-            Swal.fire("Select a friend to chat with.");
-            return;
-        }
-
-        const message = document.getElementById("chatMessage").value;
-        if (!message) return;
-
-        const payload = {
-            type: "chat",
-            to: selectedFriend,
-            message: message
-        };
-        socket.send(JSON.stringify(payload));
-
-        (async () => {
-            const result = await InsertMessage(currentUsername, selectedFriend, message);
-            if (result) {
-                //addMessageToStore(selectedFriend, `${currentUsername}: ${message}`);
-                //renderChat(selectedFriend);
-                document.getElementById("chatMessage").value = "";
-            } else {
-                Swal.fire("Something went wrong!")
-            }
-        })();
-    }
-
-    function typing(msg) {
-        const div = document.getElementById("div_typing");
-        div.innerHTML = msg;
-    }
-
-    let selectedFriend = null; // global variable
-    function loadFriends(username) {
-        fetch(`/user/GetFriends?username=${username}`)
-            .then(res => res.json())
-            .then(data => {
-                const container = document.getElementById("friendListContainer");
-                container.innerHTML = "";
-                var friends = data.result;
-
-                friends.forEach(friend => {
-                    // 🔁 Replace hardcoded name/text with dynamic content
-                    const box = document.createElement("div");
-                    box.innerHTML = `
-                    <a class="list-group-item media" href="#" style="text-decoration: none;">
-                        <div class="pull-left">
-                            <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="img-avatar">
-                        </div>
-                        <div class="media-body">
-                            <small class="list-group-item-heading">${friend.friendName}</small>
-                            <br/><b>@${friend.friendUsername}</b>
-                        </div>
-                    </a>
-            `.trim();
-
-                    // 👇 Handle friend selection
-                    box.addEventListener("click", () => {
-                        selectedFriend = friend.friendUsername;
-
-                        $("#selectedFriendNameContext").attr("class", "friendbox");
-                        $("#selectedFriendName").html(`${friend.friendName}<br/><b>@${friend.friendUsername}</b>`);
-
-                        GetMessages(currentUsername, friend.friendName)
-
-                        //renderChat(friend.friendUsername);
-                    });
-
-                    container.appendChild(box);
-                });
-            });
-    }
-
-    // load messages
-    function GetMessages(currentUsername, friendUsername) {
-        fetch(`/user/GetMessages?currentUsername=${currentUsername}&friendUsername=${friendUsername}`)
-            .then(res => res.json())
-            .then(data => {
-                //alert(JSON.stringify(data));
-                const formatted = data.result.map(m => ({
-                    text: `${m.senderUsername}: ${m.message}`,
-                    time: new Date(m.insertDate).toLocaleString() // or just m.timestamp if formatted already
-                }));
-
-                // Optionally store in local memory
-                messageStore[friendUsername] = formatted;
-
-                renderChat(friendUsername, formatted);
-            });
-    }
-    //
-
-    let typingTimeout;
-    const TYPING_TIMER_LENGTH = 3000; // 3 seconds no typing = stop
-
-    const chatInput = document.getElementById("chatMessage");
-    chatInput.addEventListener("input", () => {
-        if (!authenticated) return;
-        sendTypingStatus(true);
-        clearTimeout(typingTimeout);
-        typingTimeout = setTimeout(() => {
-            sendTypingStatus(false);
-        }, TYPING_TIMER_LENGTH);
-    });
-
-    function sendTypingStatus(isTyping) {
-        if (socket && socket.readyState === WebSocket.OPEN) {
-            const typingPayload = JSON.stringify({ type: "typing", status: isTyping });
-            socket.send(typingPayload);
-        }
-    }
-
-    //🧠 3. Manage Chat History per Friend
-    const messageStore = {}; // { friendUsername: [message1, message2, ...] }
-
-    function addMessageToStore(friend, message) {
-        if (!messageStore[friend]) {
-            messageStore[friend] = [];
-        }
-        messageStore[friend].push({
-            text: message,
-            time: new Date().toLocaleString() // Store message time
-        });
-    }
-
-    function leftSide(message, time) {
-        return `<div class="message-feed media">
-        <div class="pull-left">
-            <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="img-avatar">
-        </div>
-        <div class="media-body">
-            <div class="mf-content">${message}</div>
-            <small class="mf-date"><i class="fa fa-clock-o"></i> ${time}</small>
-        </div>
-    </div>`.trim();
-    }
-
-    function rightSide(message, time) {
-        return `<div class="message-feed right">
-        <div class="pull-right">
-            <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="img-avatar">
-        </div>
-        <div class="media-body">
-            <div class="mf-content ">${message}</div>
-            <small class="mf-date   "><i class="fa fa-clock-o"></i> ${time}</small>
-        </div>
-    </div>`.trim();
-    }
-
-
-    function renderChat(friend, externalMessages = null) {
-        const chatWindow = document.getElementById("chatWindow");
-        chatWindow.innerHTML = "";
-
-        const messages = externalMessages || messageStore[friend] || [];
-
-        messages.forEach(msgObj => {
-            const msg = msgObj.text;
-            const time = msgObj.time;
-
-            const isMine = msg.startsWith(currentUsername + ":");
-            const content = msg.split(":").slice(1).join(":").trim();
-            const html = isMine ? rightSide(content, time) : leftSide(content, time);
-
-            const wrapper = document.createElement("div");
-            wrapper.innerHTML = html;
-            chatWindow.appendChild(wrapper.firstElementChild);
-        });
-
-        chatWindow.scrollTop = chatWindow.scrollHeight;
-    }
-
-
-
-    async function InsertMessage(currentUsername, friendUsername, message) {
-        try {
-            const response = await $.ajax({
-                url: "/user/PostMessage",
-                type: "POST",
-                data: {
-                    SenderUsername: currentUsername,
-                    RecieverUsername: friendUsername,
-                    Message: message,
-                }
-            });
-            return response.isSuccess;
-        } catch (error) {
-            return false;
-        }
-    }
-
-</script>
-<script>
-    function handleLoadLayout() {
-        $("#selectedFriendNameContext").attr("class", "friendbox");
-        $("#selectedFriendName").html(`<h4>Benal Messanger!</h4>`);
-
-    }
-
-    //// Run on load
-    window.addEventListener('load', handleLoadLayout);
-</script>
-
-
-
-<!-- Template JS -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://www.bootdey.com/cache-js/cache-1635427806-97135bbb13d92c11d6b2a92f6a36685a.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" type="text/javascript"></script>
-<script src="js/site.js"></script>

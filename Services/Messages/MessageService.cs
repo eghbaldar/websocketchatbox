@@ -16,7 +16,9 @@ namespace websocket.Services.Messages
         public Guid SenderId { get; set; }
         public Guid RecieverId { get; set; }
         public string SenderUsername { get; set; }
+        public string? SenderHeadshot { get; set; }
         public string RecieverUsername { get; set; }
+        public string? RecieverHeadshot { get; set; }
         public string Message { get; set; }
         public DateTime InsertDate { get; set; }
     }
@@ -73,9 +75,11 @@ namespace websocket.Services.Messages
                     InsertDate = x.InsertDate,
                     Message = x.Message,
                     SenderUsername = (x.SenderId == current.Id) ? currentUsername : friendUsername,
-                    RecieverUsername= (x.SenderId == current.Id) ? currentUsername : friendUsername,
+                    RecieverUsername = (x.SenderId == current.Id) ? currentUsername : friendUsername,
+                    SenderHeadshot = _context.Users.FirstOrDefault(y => y.Id == x.SenderId).Headshot,
+                    RecieverHeadshot = _context.Users.FirstOrDefault(y => y.Id == x.RecieverId).Headshot,
                 })
-                .OrderBy(x=>x.InsertDate)
+                .OrderBy(x => x.InsertDate)
                 .ToList();
             return new ResultGetMessageServiceDto
             {
